@@ -1,0 +1,820 @@
+:root {
+    /* Colors extracted from reference site */
+    --clr-bg-main: #f5f2ed;
+    /* The off-white main background */
+    --clr-brand-orange-main: #fca33d;
+    /* Vibrant orange */
+    --clr-brand-orange-light: #f5ce9f;
+    /* Lighter soft orange for accents */
+    --clr-text-dark: #3a3836;
+    /* Dark brown/grey text */
+    --clr-text-mid: #5e5a56;
+    --clr-white: #ffffff;
+
+    /* Typography */
+    --font-heading: 'Roboto Serif', serif;
+    --font-body: 'Roboto', sans-serif;
+
+    /* Animation timing */
+    --anim-duration: 0.6s;
+    --anim-curve: cubic-bezier(0.16, 1, 0.3, 1);
+    /* Emulates spring feel */
+}
+
+/* =========================================
+   Reset & Base Styles
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--clr-bg-main);
+    color: var(--clr-text-dark);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+}
+
+/* =========================================
+   Layout & Reusable Utilities
+   ========================================= */
+main {
+    background-color: var(--clr-bg-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.section-padding {
+    padding-top: var(--sp-96);
+    padding-bottom: var(--sp-96);
+}
+
+.section-title {
+    font-size: 2.75rem;
+    color: var(--clr-text-dark);
+    margin-bottom: 1rem;
+}
+
+/* Tag style (e.g. Unique Benefits) */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.tag-small {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.6rem;
+    background-color: #eee9e0;
+    border-radius: 2px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--clr-text-mid);
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--clr-brand-orange-main);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.btn-primary {
+    background-color: var(--clr-brand-orange-light);
+    color: var(--clr-text-dark);
+}
+
+.btn-primary-alt {
+    background-color: var(--clr-brand-orange-main);
+    color: var(--clr-white);
+    padding: 1.5rem 3rem;
+    font-size: 1.25rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--clr-text-dark);
+    padding: 1.5rem 3rem;
+    font-size: 1.25rem;
+}
+
+.btn-text {
+    font-weight: 500;
+    position: relative;
+}
+
+/* =========================================
+   Layout Utilities
+   ========================================= */
+.split-50 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+   Animations
+   ========================================= */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity var(--anim-duration) var(--anim-curve),
+        transform var(--anim-duration) var(--anim-curve);
+    transition-delay: var(--delay, 0s);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity var(--anim-duration) ease;
+}
+
+.is-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* =========================================
+   Header Nav (Not explicitly in main screenshot but inferred)
+   ========================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav-links a {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--clr-brand-orange-main);
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* =========================================
+   1. Hero Section (Unlocking True Potential)
+   ========================================= */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-color: var(--clr-bg-main);
+    min-height: 100vh;
+    gap: 0;
+}
+
+.hero-image-container {
+    position: relative;
+    padding: 0;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.hero-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-bg-main);
+    padding: 1.5rem 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    border-radius: 0;
+}
+
+.hero-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-nav {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 120px;
+    /* strict match to .hero-badge height */
+    gap: 0;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hero-nav a {
+    flex: 1;
+    /* Equal width rectangles */
+    color: var(--clr-text-mid);
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 0;
+    /* Rectangles attached to each other */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s var(--anim-curve);
+    text-decoration: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    /* Transparent grey stroke */
+}
+
+.hero-nav a:last-child {
+    border-right: none;
+}
+
+.hero-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    /* Hover logic remains the same */
+}
+
+.hero-nav a.active {
+    font-weight: 500;
+}
+
+
+
+/* Sliding text effect for large center text */
+.hero-nav a .nav-text-container {
+    height: 3rem;
+    /* Fixed height acting as a window */
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-nav a .text-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.75rem;
+    /* Larger text matching user drawing */
+    color: var(--clr-brand-orange-main);
+    /* Orange/Red color matching drawing */
+    font-weight: 400;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-nav a .text-wrapper::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-text-dark);
+    /* Ensure hover text matches active/dark color */
+}
+
+.hero-nav a:hover .text-wrapper {
+    transform: translateY(-100%);
+}
+
+/* The 'Contact Us' button matching the reference */
+.hero-nav a.nav-link-contact {
+    background-color: #f7e6d2;
+    /* Beige background from MindSpring */
+    color: var(--clr-text-dark);
+    font-weight: 500;
+}
+
+.hero-nav a.nav-link-contact:hover {
+    background-color: #f0deca;
+    /* Slightly darker on hover */
+}
+
+.hero-text-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6rem;
+}
+
+.display-title {
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    color: var(--clr-text-dark);
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--clr-text-mid);
+    max-width: 400px;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 6rem 4rem 6rem;
+}
+
+.hero-stats h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-stats p {
+    font-size: 0.85rem;
+    color: var(--clr-text-mid);
+}
+
+/* =========================================
+   2. Testimonial Banner
+   ========================================= */
+.testimonial-banner {
+    width: 100%;
+    /* layout handled by .split-50 */
+}
+
+.testimonial-text {
+    background-color: var(--clr-bg-main);
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-text p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--clr-text-mid);
+    margin-bottom: 2rem;
+}
+
+.author {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.banner-cta {
+    /* layout handled by .split-50 */
+    align-items: stretch;
+}
+
+.cta-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--clr-text-dark);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-orange {
+    background-color: var(--clr-brand-orange-main);
+}
+
+.cta-orange:hover {
+    background-color: #d17540;
+}
+
+.cta-beige {
+    background-color: #f7e6d2;
+}
+
+.cta-beige:hover {
+    background-color: #f0deca;
+}
+
+/* =========================================
+   3. Distinctive Features
+   ========================================= */
+.features-section {
+    background-color: var(--clr-bg-main);
+    width: 100%;
+    padding-top: 6rem;
+}
+
+.features-section .section-header {
+    text-align: center;
+}
+
+.features-section .tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: var(--clr-text-dark);
+}
+
+.features-section .dot {
+    background-color: var(--clr-white);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: var(--clr-bg-main);
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.feature-card:hover {
+    background-color: var(--clr-white);
+}
+
+.icon-placeholder {
+    color: var(--clr-brand-orange-main);
+    margin-bottom: 2rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    max-width: 250px;
+}
+
+/* =========================================
+   3b. Academic Programs (White Grid Area)
+   ========================================= */
+.academic-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background-color: var(--clr-white);
+    /* Reference shows a clean white section here */
+}
+
+.academic-image {
+    width: 100%;
+    height: 100%;
+}
+
+.academic-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.academic-content {
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.academic-tabs {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 1rem;
+}
+
+.academic-tabs a {
+    font-size: 0.85rem;
+    color: var(--clr-text-mid);
+    font-weight: 500;
+}
+
+.academic-tabs a.active {
+    color: var(--clr-text-dark);
+}
+
+.academic-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.academic-text h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--clr-text-dark);
+}
+
+.academic-text p {
+    font-size: 1.1rem;
+    color: var(--clr-text-mid);
+    max-width: 400px;
+    margin-bottom: 2.5rem;
+}
+
+.academic-text .btn-text {
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* =========================================
+   4. History & Vision (With Timeline)
+   ========================================= */
+.history-section {
+    width: 100%;
+    background-color: var(--clr-bg-main);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.history-image-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    /* Create the sharp split border on the left */
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.history-image-sticky img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+
+/* Content Right Side */
+.history-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.history-block {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.history-block> :not(.history-image) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.history-block>span.tag {
+    margin-top: 6rem;
+    align-self: flex-start;
+}
+
+.history-block:last-child {
+    border-bottom: none;
+}
+
+.history-desc {
+    font-size: 1.1rem;
+    color: var(--clr-text-mid);
+    max-width: 450px;
+    margin-bottom: 3rem;
+}
+
+
+
+/* =========================================
+   5. News & Events
+   ========================================= */
+.news-section {
+    width: 100%;
+    background-color: var(--clr-white);
+    padding-top: 6rem;
+}
+
+.news-section .section-header {
+    text-align: center;
+    margin-bottom: var(--sp-48);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-white);
+}
+
+.news-img-wrapper {
+    width: 100%;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
+.news-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.news-info {
+    padding: 2.5rem;
+    background-color: var(--clr-white);
+    flex: 1;
+}
+
+.tags-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.news-info .tag-small {
+    margin-bottom: 1rem;
+}
+
+.news-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.news-info .date {
+    font-size: 0.85rem;
+    color: var(--clr-text-mid);
+}
+
+.news-footer {
+    background-color: var(--clr-brand-orange-light);
+    padding: var(--sp-48);
+    text-align: center;
+}
+
+.btn-browse {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+@media (max-width: 1024px) {
+
+    .hero-section,
+    .history-section {
+        grid-template-columns: 1fr;
+    }
+
+    .display-title {
+        font-size: 3.5rem;
+    }
+
+    .features-grid,
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-cta {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .features-grid,
+    .news-grid,
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+    }
+
+    .display-title {
+        font-size: 2.75rem;
+    }
+
+    .hero-content,
+    .history-content {
+        padding: 2rem;
+    }
+
+    .hero-nav {
+        display: none;
+    }
+}
