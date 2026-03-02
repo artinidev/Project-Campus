@@ -1,0 +1,11 @@
+{
+    "name": "campus-superia-web",
+    "version": "1.0.0",
+    "description": "Campus Superia Website",
+    "main": "index.html",
+    "scripts": {
+        "dev": "npx serve -l 3000 ."
+    },
+    "author": "",
+    "license": "ISC"
+}

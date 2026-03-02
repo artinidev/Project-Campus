@@ -21,9 +21,9 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-image-container fade-up">
-                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop"
-                    alt="Student Reading" class="hero-img">
-                <div class="hero-badge">MS</div>
+                <img src="./assets/hero.jpeg" alt="Campus Superia Team" class="hero-img"
+                    onerror="this.src='https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop'">
+                <div class="hero-badge">CS</div>
             </div>
             <div class="hero-content fade-up">
                 <nav class="hero-nav">
@@ -194,62 +194,246 @@
 
             <!-- Sticky Image Side (RIGHT) -->
             <div class="history-image-sticky fade-up">
-                <img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?q=80&w=2070&auto=format&fit=crop"
-                    alt="Students collaborating" id="history-sticky-img">
+                <img src="./assets/scroll1.jpg" alt="Students collaborating" id="history-sticky-img">
             </div>
         </section>
 
-        <!-- News and Events Section -->
-        <section class="news-section">
+        <!-- Programs Section -->
+        <section class="news-section" id="programs">
             <div class="section-header fade-up">
-                <span class="tag"><span class="dot"></span> Latest Updates</span>
-                <h2 class="section-title">Campus News<br>& Upcoming Events</h2>
+                <span class="tag"><span class="dot"></span> Offerings</span>
+                <h2 class="section-title">Our Programs Designed<br>For Every Stage</h2>
             </div>
 
             <div class="news-grid">
                 <div class="news-card fade-up" style="--delay: 0.1s">
                     <div class="news-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2064&auto=format&fit=crop"
-                            alt="Students in class">
+                        <img src="./assets/Foundation.jpg" alt="Kids and Teens in class">
                     </div>
                     <div class="news-info">
-                        <span class="tag-small"><span class="dot"></span> News</span>
-                        <h3>Celebrating Student<br>Achievements This Month</h3>
-                        <span class="date">Aug 8, 2024</span>
+                        <span class="tag-small"><span class="dot"></span> Foundation</span>
+                        <h3>Kids & Teens</h3>
+                        <p class="program-desc">Fun and interactive classes designed to build strong foundations early.
+                        </p>
                     </div>
                 </div>
                 <div class="news-card fade-up" style="--delay: 0.2s">
                     <div class="news-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1511629091441-ee46146481b6?q=80&w=2070&auto=format&fit=crop"
-                            alt="Students playing">
+                        <img src="./assets/academic.png" alt="Students studying">
                     </div>
                     <div class="news-info">
                         <div class="tags-row">
-                            <span class="tag-small"><span class="dot"></span> Event</span>
-                            <span class="tag-small">Sep 12, 1:00 PM</span>
+                            <span class="tag-small"><span class="dot"></span> Academic</span>
                         </div>
-                        <h3>Get Ready for Our Annual<br>School Fair Extravaganza!</h3>
-                        <span class="date">Aug 29, 2024</span>
+                        <h3>Students</h3>
+                        <p class="program-desc">Academic support and international exam preparation.</p>
                     </div>
                 </div>
                 <div class="news-card fade-up" style="--delay: 0.3s">
                     <div class="news-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop"
-                            alt="Teacher speaking">
+                        <img src="./assets/career.jpg" alt="Professionals working">
                     </div>
                     <div class="news-info">
-                        <span class="tag-small"><span class="dot"></span> News</span>
-                        <h3>Don't Miss the Upcoming<br>Parent-Teacher Conferences</h3>
-                        <span class="date">Aug 17, 2024</span>
+                        <span class="tag-small"><span class="dot"></span> Career</span>
+                        <h3>Professionals</h3>
+                        <p class="program-desc">Business language training to boost your career.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="news-footer fade-up">
-                <a href="#" class="btn btn-secondary">View All News</a>
+
+        </section>
+
+        <!-- Lead Generation Form Section -->
+        <section class="form-section card-variant">
+            <div class="form-section-header fade-up">
+                <div class="header-left">
+                    <h2>Nous sommes<br>là pour vous aider.</h2>
+                </div>
+                <div class="header-right">
+                    <p>Nous encourageons nos clients à participer activement aux discussions, à partager leurs idées,
+                        préférences et retours.</p>
+                    <div class="header-actions">
+                        <a href="#contact" class="btn btn-brand-orange">Prenez contact ↗</a>
+                        <a href="tel:+15145747140" class="btn btn-outline-light">Appelez: +1 514-574-7140</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container fade-up">
+                <div class="form-card">
+                    <div class="form-card-left">
+                        <h3>N'hésitez pas à envoyer un message à notre équipe sympathique</h3>
+                        <p>Vous avez une question ou un projet à discuter ? Remplissez le formulaire ci-dessous ou
+                            contactez-nous directement.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Dévouée</span>
+                            <span class="feature-tag">Réactive</span>
+                            <span class="feature-tag">Professionnelle</span>
+                        </div>
+                    </div>
+
+                    <div class="form-card-right">
+                        <form action="#" class="campus-form-card" id="multi-step-form">
+                            <!-- Progress Indicator -->
+                            <div class="form-progress">
+                                <span class="progress-text">Étape <span id="current-step">1</span> sur 3</span>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" id="progress-fill"></div>
+                                </div>
+                            </div>
+
+                            <!-- Step 1: Informations personnelles -->
+                            <div class="form-step form-step-active" data-step="1">
+                                <div class="form-group">
+                                    <label for="nom">Nom complet <span class="text-brand-orange">*</span></label>
+                                    <input type="text" id="nom" name="nom"
+                                        placeholder="Ex : Dupont Jean – pour que nous puissions vous identifier correctement"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email <span class="text-brand-orange">*</span></label>
+                                    <input type="email" id="email" name="email"
+                                        placeholder="exemple@email.com ↗ – pour recevoir nos informations et confirmation"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone">Téléphone <span class="text-brand-orange">*</span></label>
+                                    <input type="tel" id="telephone" name="telephone"
+                                        placeholder="Ex : 06 12 34 56 78 – pour un contact rapide si nécessaire"
+                                        required>
+                                </div>
+                                <div class="form-actions form-actions-right">
+                                    <button type="button" class="btn btn-brand-orange-full btn-next">Suivant</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Détails de la formation -->
+                            <div class="form-step" data-step="2">
+                                <div class="form-group">
+                                    <label for="langue">Langue souhaitée <span
+                                            class="text-brand-orange">*</span></label>
+                                    <select id="langue" name="langue" required>
+                                        <option value="" disabled selected>Options : Français, Anglais</option>
+                                        <option value="fr">Français</option>
+                                        <option value="en">Anglais</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="niveau">Niveau actuel <span class="text-brand-orange">*</span></label>
+                                    <select id="niveau" name="niveau" required>
+                                        <option value="" disabled selected>Options : Débutant, Intermédiaire, Avancé
+                                        </option>
+                                        <option value="debutant">Débutant</option>
+                                        <option value="intermediaire">Intermédiaire</option>
+                                        <option value="avance">Avancé</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="objectif">Objectif personnel <span
+                                            class="text-brand-orange">*</span></label>
+                                    <select id="objectif" name="objectif" required>
+                                        <option value="" disabled selected>Sélectionnez un objectif</option>
+                                        <option value="conversation">Conversation quotidienne</option>
+                                        <option value="pro">Professionnel/Business</option>
+                                        <option value="examen">Préparation examen</option>
+                                        <option value="voyage">Voyage</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="type_formation">Type de formation souhaité <span
+                                            class="text-brand-orange">*</span></label>
+                                    <select id="type_formation" name="type_formation" required>
+                                        <option value="" disabled selected>Sélectionnez un type</option>
+                                        <option value="intensif">Cours intensif</option>
+                                        <option value="hebdomadaire">Cours hebdomadaire</option>
+                                        <option value="soir">Cours du soir</option>
+                                        <option value="mixte">Mixte</option>
+                                    </select>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-outline-dark btn-prev">Précédent</button>
+                                    <button type="button" class="btn btn-brand-orange-full btn-next">Suivant</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Informations complémentaires -->
+                            <div class="form-step" data-step="3">
+                                <div class="form-group">
+                                    <label for="commentaire">Commentaire ou précision</label>
+                                    <textarea id="commentaire" name="commentaire"
+                                        placeholder="Ex : Je souhaite des horaires adaptés à mon emploi du temps"
+                                        rows="4"></textarea>
+                                </div>
+                                <div class="form-group checkbox-group">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" id="rgpd" name="rgpd" required>
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">Je consens à ce que Campus Superia collecte et
+                                            utilise mes données pour répondre à ma demande, conformément à la
+                                            réglementation RGPD. <a href="#">[Politique de confidentialité]</a> <span
+                                                class="text-brand-orange">*</span></span>
+                                    </label>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-outline-dark btn-prev">Précédent</button>
+                                    <button type="submit" class="btn btn-brand-orange-full">Envoyer ma demande</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <h3 class="footer-brand">Campus Superia</h3>
+                <div class="footer-bottom-brand">
+                    <span class="footer-badge">CS</span>
+                    <p class="copyright">&copy; 2026, Campus Superia</p>
+                </div>
+            </div>
+
+            <!-- Col 2: Menu -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#academics">Mission</a></li>
+                    <li><a href="#admissions">News</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Socials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Facebook ↗</a></li>
+                    <li><a href="#">LinkedIn ↗</a></li>
+                    <li><a href="#">Twitter ↗</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Contact -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Get In Touch</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@campussuperia.com">contact@campussuperia.com</a></li>
+                    <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    <li><a href="tel:+0987654321">+1 (098) 765-432</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-brand-orange-full footer-btn">Enroll Today</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
