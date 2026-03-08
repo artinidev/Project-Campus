@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  # 1. Frontend Service (Serving UI on port 3000)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: campus_frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - campus_network
+    depends_on:
+      - backend
+    restart: always
+
+  # 2. Backend Service (Node API on port 5000)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: campus_backend
+    ports:
+      - "5000:5000"
+    networks:
+      - campus_network
+    env_file:
+      - .env
+    depends_on:
+      - db
+    restart: always
+
+  # 3. Database Service (MySQL)
+  db:
+    image: mysql:8.0
+    container_name: campus_mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - campus_network
+    env_file:
+      - .env
+    volumes:
+      - mysql_data:/var/lib/mysql
+      # Optional: Add init scripts
+      # - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: always
+
+# Define Volumes and Networks
+volumes:
+  mysql_data:
+
+
+networks:
+  campus_network:
+    driver: bridge

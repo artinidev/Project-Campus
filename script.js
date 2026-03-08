@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define the images corresponding to each block ID
     const historyImages = {
-        'history-1': './assets/scroll1.jpg',
-        'history-2': './assets/scroll2.jpg',
-        'history-3': './assets/scroll3.jpg'
+        'history-1': './assets/scroll-actual-1.jpg',
+        'history-2': './assets/scroll-actual-2.jpg',
+        'history-3': './assets/scroll-actual-3.jpg'
     };
 
     if (historyBlocks.length > 0 && stickyImage) {
@@ -166,4 +166,192 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         });
     }
+
+    /* =========================================
+       Custom Select Dropdown Logic
+       ========================================= */
+    const customSelects = document.querySelectorAll('.campus-form-card select');
+
+    customSelects.forEach(selectElement => {
+        // Hide the original select
+        selectElement.style.display = 'none';
+
+        // Create custom wrapper
+        const wrapper = document.createElement('div');
+        wrapper.className = 'custom-select-wrapper';
+
+        // Insert wrapper right after the select element in the DOM
+        selectElement.parentNode.insertBefore(wrapper, selectElement.nextSibling);
+
+        // Move the hidden select inside the wrapper
+        wrapper.appendChild(selectElement);
+
+        // Create trigger button (the part you click to open)
+        const trigger = document.createElement('div');
+        trigger.className = 'custom-select-trigger';
+
+        // Find the selected option to display initially
+        const selectedOption = selectElement.options[selectElement.selectedIndex];
+        trigger.innerHTML = `<span>${selectedOption.text}</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
+        wrapper.appendChild(trigger);
+
+        // Create the dropdown menu container
+        const optionsContainer = document.createElement('div');
+        optionsContainer.className = 'custom-select-options';
+
+        // Generate options from the native select
+        Array.from(selectElement.children).forEach(child => {
+            if (child.tagName === 'OPTGROUP') {
+                // Handle OptGroups
+                const optGroupLabel = document.createElement('div');
+                optGroupLabel.className = 'custom-optgroup-label';
+                optGroupLabel.textContent = child.label;
+                optionsContainer.appendChild(optGroupLabel);
+
+                // Add the options within the optgroup
+                Array.from(child.children).forEach(option => {
+                    createCustomOption(option, optionsContainer, selectElement, trigger);
+                });
+            } else if (child.tagName === 'OPTION') {
+                // Handle direct Options (ignore the disabled generic placeholder for the dropdown list, but keep it for logic if needed)
+                if (!child.disabled) {
+                    createCustomOption(child, optionsContainer, selectElement, trigger);
+                }
+            }
+        });
+
+        wrapper.appendChild(optionsContainer);
+
+        // Trigger Click Event (Toggle Open/Close)
+        trigger.addEventListener('click', function (e) {
+            e.stopPropagation();
+
+            // Close any other open dropdowns first
+            document.querySelectorAll('.custom-select-wrapper.open').forEach(openWrapper => {
+                if (openWrapper !== wrapper) {
+                    openWrapper.classList.remove('open');
+                }
+            });
+
+            wrapper.classList.toggle('open');
+
+            // Re-evaluate required validation state to clear native error if any (handled later on submit, but good for UX)
+        });
+    });
+
+    // Helper function to create individual options
+    function createCustomOption(optionElement, container, nativeSelect, trigger) {
+        const customOption = document.createElement('div');
+        customOption.className = 'custom-option';
+        customOption.dataset.value = optionElement.value;
+        customOption.textContent = optionElement.text;
+
+        // Add checkmark icon (initially hidden)
+        const checkIcon = document.createElement('span');
+        checkIcon.className = 'custom-option-check';
+        checkIcon.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+        customOption.prepend(checkIcon);
+
+        customOption.addEventListener('click', function (e) {
+            e.stopPropagation();
+
+            // Update native select value
+            nativeSelect.value = this.dataset.value;
+
+            // Trigger change event on native select so validation/other scripts catch it
+            nativeSelect.dispatchEvent(new Event('change'));
+
+            // Update trigger text
+            trigger.querySelector('span').textContent = this.textContent;
+
+            // Remove selected class from all siblings
+            const siblings = container.querySelectorAll('.custom-option');
+            siblings.forEach(sib => sib.classList.remove('selected'));
+
+            // Add selected class to this one
+            this.classList.add('selected');
+
+            // Close dropdown
+            trigger.parentElement.classList.remove('open');
+
+            // Remove 'unselected' styling if present (custom logic to make it look active)
+            trigger.classList.add('has-value');
+        });
+
+        container.appendChild(customOption);
+    }
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function () {
+        document.querySelectorAll('.custom-select-wrapper.open').forEach(wrapper => {
+            wrapper.classList.remove('open');
+        });
+    });
+
+    /* =========================================
+       FAQ Accordion Logic
+       ========================================= */
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const currentItem = question.closest('.faq-item');
+            const isActive = currentItem.classList.contains('active');
+
+            // Close all other FAQ items for a cleaner accordion effect (optional, but good UX)
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // If it wasn't active before, open it now
+            if (!isActive) {
+                currentItem.classList.add('active');
+            }
+        });
+    });
+
+    /* =========================================
+       Fast Beautiful Smooth Scrolling
+       ========================================= */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                e.preventDefault();
+
+                // Calculate distances
+                const headerOffset = document.querySelector('.hero-nav') ? document.querySelector('.hero-nav').offsetHeight : 0;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerOffset;
+                const startPosition = window.scrollY;
+                const distance = targetPosition - startPosition;
+                const duration = 600; // 600ms makes it fast but gives it enough time to feel smooth
+                let start = null;
+
+                // Easing function for a beautiful smooth stop (easeOutQuart)
+                const easeOutQuart = time => 1 - Math.pow(1 - time, 4);
+
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    const progress = timestamp - start;
+                    const percentage = Math.min(progress / duration, 1);
+
+                    window.scrollTo(0, startPosition + distance * easeOutQuart(percentage));
+
+                    if (progress < duration) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        // Ensure we absolutely hit the target at the end, and update URL
+                        window.scrollTo(0, targetPosition);
+                        // Optional: Update history without jumping
+                        // history.pushState(null, null, targetId);
+                    }
+                }
+
+                window.requestAnimationFrame(step);
+            }
+        });
+    });
 });
