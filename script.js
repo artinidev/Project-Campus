@@ -354,4 +354,53 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    /* =========================================
+       Progressive Scroll Timeline Formations
+       ========================================= */
+    const timeline = document.querySelector('.story-timeline');
+    const timelineFill = document.getElementById('timeline-fill');
+    
+    if (timeline && timelineFill) {
+        const steps = timeline.querySelectorAll('.story-step');
+        
+        window.addEventListener('scroll', () => {
+            // Get position of the timeline relative to viewport
+            const rect = timeline.getBoundingClientRect();
+            // Trigger point at exactly 50% of the viewport height (center of the screen)
+            const triggerPoint = window.innerHeight * 0.5; 
+            
+            let percentage = 0;
+            
+            if (rect.top <= triggerPoint) {
+                // How far we scrolled past the trigger point
+                const scrolledPast = triggerPoint - rect.top;
+                // Full line length logic
+                const totalScrollLength = rect.height - 100; 
+                
+                percentage = (scrolledPast / totalScrollLength) * 100;
+                
+                // Determine step visibility strictly tied to the central line position
+                steps.forEach(step => {
+                    const stepRect = step.getBoundingClientRect();
+                    // If the step's center crosses the trigger point + slight offset
+                    if (stepRect.top + (stepRect.height / 2) - 40 <= triggerPoint) {
+                        step.classList.add('active-step');
+                    } else {
+                        // Un-reveal if scrolling back up
+                        step.classList.remove('active-step');
+                    }
+                });
+            } else {
+                steps.forEach(step => step.classList.remove('active-step'));
+            }
+            
+            // Clamp percentage between 0 and 100
+            percentage = Math.max(0, Math.min(percentage, 100));
+            timelineFill.style.height = `${percentage}%`;
+        });
+        
+        // Trigger once on load to establish initial state
+        window.dispatchEvent(new Event('scroll'));
+    }
 });
