@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Brochure FLE — Campus Superia</title>
+    <meta name="description"
+        content="Découvrez notre brochure de Français Langue Étrangère (FLE). Comprendre, parler, lire et écrire le français avec aisance, du A1 au C2.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300..700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=14">
+    <style>
+        .brochure-section {
+            padding: 5rem 5%;
+        }
+        
+        .brochure-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .brochure-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .brochure-header .tag {
+            color: var(--clr-brand-orange-main);
+            border-color: rgba(252, 163, 61, 0.3);
+        }
+
+        .brochure-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--clr-text-dark);
+            margin-top: 1rem;
+        }
+
+        /* Value Cards */
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: #fdfbf7;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: #ab7146; /* Matching PDF brown */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+        }
+
+        .value-card h3 {
+            font-family: var(--font-heading);
+            color: var(--clr-text-dark);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .value-card p {
+            color: var(--clr-text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Niveaux Grid */
+        .niveau-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .niveau-card {
+            background: #fdfbf7;
+            border-radius: 12px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .niveau-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .niveau-badge {
+            background: var(--clr-text-dark);
+            color: white;
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            padding: 1rem;
+            border-radius: 8px;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .niveau-desc {
+            font-weight: 500;
+            color: var(--clr-text-dark);
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .niveau-details {
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding-top: 1.5rem;
+        }
+
+        .niveau-details p {
+            font-size: 0.95rem;
+            color: var(--clr-text-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .niveau-details strong {
+            color: #ab7146;
+        }
+
+        /* Pricing Table */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: var(--clr-text-dark);
+            color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .pricing-card h4 {
+            color: #fca33d;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-family: var(--font-heading);
+            margin: 0;
+        }
+
+        /* 2-Col Layouts */
+        .split-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .split-box {
+            background: #fdfbf7;
+            padding: 3rem;
+            border-radius: 12px;
+            height: 100%;
+        }
+
+        .split-box h3 {
+            font-family: var(--font-heading);
+            color: var(--clr-text-dark);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .check-list li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--clr-text-light);
+            line-height: 1.6;
+        }
+
+        .check-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background: #ab7146;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .dot-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .dot-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--clr-text-light);
+        }
+
+        .dot-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            background: var(--clr-text-dark);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 992px) {
+            .split-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./assets/logo-full.png" alt="Campus Superia Logo">
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu"
+                onclick="document.querySelector('.site-nav').classList.toggle('active')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="site-nav">
+                <a href="#about">À propos</a>
+                <a href="#academics">Mission</a>
+                <a href="programmes.html">Programme</a>
+                <div class="nav-dropdown-wrapper">
+                    <a href="test.html" class="dropdown-trigger">
+                        <span>Pré-évaluation</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-links-col">
+                            <div class="dropdown-item opt-analyse">
+                                <a href="analyse.html">
+                                    <span class="item-title">Analyse personnalisée de votre projet</span>
+                                    <span class="item-desc">Afin de vous accompagner dans le choix de votre formation,
+                                        complétez ce court questionnaire pour orienter notre équipe.</span>
+                                </a>
+                            </div>
+                            <div class="dropdown-item opt-test">
+                                <a href="test.html">
+                                    <span class="item-title">Pré-évaluation</span>
+                                    <span class="item-desc">CAMPUS SUPERIA vous propose un test de positionnement en
+                                        français afin d’évaluer votre niveau actuel, d’identifier vos besoins et de vous
+                                        orienter.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-preview-col">
+                            <div class="preview-img-container">
+                                <img src="./assets/hero.jpeg" class="preview-img img-default" alt="Campus Default">
+                                <img src="./assets/scroll-actual-2.jpg" class="preview-img img-analyse"
+                                    alt="Project Analysis">
+                                <img src="./assets/scroll-actual-1.jpg" class="preview-img img-test"
+                                    alt="French Placement Test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admissions Mega-Menu -->
+                <div class="nav-dropdown-wrapper">
+                    <a href="admissions.html" class="dropdown-trigger">
+                        <span>Admissions</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown admissions-mega">
+                        <!-- Col 1: Main Category Cards -->
+                        <div class="adm-column adm-col-main">
+                            <div class="dropdown-col-header">Intégrer Campus Supéria</div>
+                            <div class="adm-cards-container">
+                                <div class="adm-card-btn active" data-target="candidature">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Déposer ma
+                                            candidature</span></div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="adm-card-btn" data-target="financement">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Financer ma formation</span>
+                                    </div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: Sub-category Cards -->
+                        <div class="adm-column adm-col-sub">
+                            <!-- Sub-panel for Candidature -->
+                            <div class="adm-sub-panel active" id="sub-panel-candidature">
+                                <div class="dropdown-col-header">Choisir sa rentrée</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn active" data-target="rentree-septembre">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Rentrée de
+                                                septembre</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="rentree-fevrier">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Rentrée de
+                                                février</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="procedure-internationale">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                <path
+                                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Candidats
+                                                internationaux</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-panel for Financement -->
+                            <div class="adm-sub-panel" id="sub-panel-financement">
+                                <div class="dropdown-col-header">Le financement des études</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn" data-target="financement-options">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <line x1="12" y1="10" x2="12" y2="10"></line>
+                                                <line x1="12" y1="14" x2="12" y2="14"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Options de
+                                                financement</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 3: Direct Link Lists -->
+                        <div class="adm-column adm-col-links">
+                            <div class="adm-links-panel active" id="links-panel-rentree-septembre">
+                                <div class="dropdown-col-header">Procédures par programme</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bts.html">Admission BTS</a></li>
+                                    <li><a href="admissions-bachelor.html">Admission Bachelor</a></li>
+                                    <li><a href="admissions-bba.html">Admission BBA</a></li>
+                                    <li><a href="admissions-msc.html">Admission MSc</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-rentree-fevrier">
+                                <div class="dropdown-col-header">Faire sa rentrée en Février</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bachelor.html?rentree=fevrier">Admission Bachelor</a></li>
+                                    <li><a href="admissions-bba.html?rentree=fevrier">Admission BBA</a></li>
+                                    <li><a href="admissions-msc.html?rentree=fevrier">Admission MSc</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-procedure-internationale">
+                                <div class="dropdown-col-header">Procédure Internationale</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-international.html">Admission Internationale Bachelor</a>
+                                    </li>
+                                    <li><a href="admissions-international.html">Admission Internationale BBA</a></li>
+                                    <li><a href="admissions-international.html">Admission Internationale MSc</a></li>
+                                    <li><a href="admissions-international.html#visa">Visa Étudiant</a></li>
+                                    <li><a href="admissions-international.html#visa">Logement Étudiant</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-financement-options">
+                                <div class="dropdown-col-header">Le financement des études</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-frais.html">Frais de scolarité</a></li>
+                                    <li><a href="admissions-bourses.html">Bourses</a></li>
+                                    <li><a href="admissions-bourses.html#cpf">Financement</a></li>
+                                    <li><a href="admissions-frais.html#options">Paiement échelonné</a></li>
+                                    <li><a href="admissions-bourses.html#alternance">Alternance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Col 4: Preview Card -->
+                        <div class="adm-column adm-col-preview">
+                            <div class="adm-preview-container">
+                                <div class="adm-preview-card active" data-preview="rentree-septembre">
+                                    <img src="./assets/adm-preview-september.png" alt="Rentrée de Septembre">
+                                </div>
+                                <div class="adm-preview-card" data-preview="rentree-fevrier">
+                                    <img src="./assets/adm-preview-september.png" alt="Rentrée de Février">
+                                </div>
+                                <div class="adm-preview-card" data-preview="procedure-internationale">
+                                    <img src="./assets/adm-preview-international.png" alt="Procédure Internationale">
+                                </div>
+                                <div class="adm-preview-card" data-preview="financement-options">
+                                    <img src="./assets/adm-preview-scholarship.png" alt="Le financement des études">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="partenariats.html">Partenariats</a>
+                <a href="index-en.html" class="nav-lang" aria-label="Switch language to English">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    <span>EN</span>
+                </a>
+                <a href="#contact" class="nav-cta">Contactez-nous</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-image-wrapper hero-secondary fade-up" style="height: 60vh; min-height: 500px;">
+                <img src="./assets/hero.jpeg" alt="Brochure FLE Campus Superia" class="hero-img">
+                <div class="hero-overlay">
+                    <div class="hero-layout">
+                        <div class="hero-text-area">
+                            <span class="tag" style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.25); margin-bottom:1.5rem;">
+                                <span class="dot" style="background:#fca33d;"></span> Français Langue Étrangère
+                            </span>
+                            <h1 class="display-title">Brochure FLE<br>Édition 2026</h1>
+                            <p class="hero-subtitle">Comprendre, parler, lire et écrire le français — avec aisance, du niveau A1 au niveau C2.</p>
+                            <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;">
+                                <a href="./assets/Brochure_Campus_Superia_FLE_1.pdf" target="_blank" class="btn btn-brand-orange" style="border-radius:4px; display:inline-flex; align-items:center; gap:0.5rem;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                    Télécharger le PDF
+                                </a>
+                                <a href="#details" class="btn btn-outline-light" style="border-radius:4px;">Découvrir en ligne</a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="page-breadcrumb">
+                        <a href="index.html">Accueil</a>
+                        <span class="bc-sep">/</span>
+                        <a href="programmes.html">Programmes</a>
+                        <span class="bc-sep">/</span>
+                        <span class="bc-current">Brochure FLE</span>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Qui sommes-nous -->
+        <section id="details" class="brochure-section">
+            <div class="brochure-container">
+                <div class="brochure-header fade-up">
+                    <span class="tag"><span class="dot"></span> Qui sommes-nous</span>
+                    <h2 class="brochure-title">Notre mission et nos valeurs</h2>
+                    <p style="color: var(--clr-text-light); max-width: 800px; margin: 1.5rem auto 0; line-height: 1.6;">Campus Supéria est un organisme de formation en langues. Nous accompagnons les personnes non francophones — salariés, demandeurs d’emploi, étudiants et particuliers — dans l’apprentissage du français, avec un double objectif : favoriser l’intégration sociale et professionnelle, et renforcer la maîtrise du français à l’oral comme à l’écrit.</p>
+                </div>
+                
+                <div class="value-grid">
+                    <div class="value-card fade-up">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <h3>Expertise</h3>
+                        <p>Des formateurs qualifiés en FLE, expérimentés auprès d’un public adulte.</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.1s">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+                        </div>
+                        <h3>Adaptabilité</h3>
+                        <p>Des parcours sur mesure selon votre niveau, vos objectifs et vos contraintes.</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.2s">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        </div>
+                        <h3>Qualité</h3>
+                        <p>Une démarche qualité structurée et une amélioration continue de nos formations.</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.3s">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/><path d="M8 12h8"/></svg>
+                        </div>
+                        <h3>Accessibilité</h3>
+                        <p>Locaux accessibles PMR, référent handicap et modalités à distance disponibles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Pédagogie -->
+        <section class="brochure-section" style="background: var(--clr-bg-main);">
+            <div class="brochure-container">
+                <div class="brochure-header fade-up">
+                    <span class="tag"><span class="dot"></span> Notre démarche</span>
+                    <h2 class="brochure-title">Notre pédagogie & démarche qualité</h2>
+                </div>
+                
+                <div class="value-grid">
+                    <div class="value-card fade-up">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                        </div>
+                        <h3>Positionnement</h3>
+                        <p>Test d’entrée (écrit et oral) pour identifier votre niveau et adapter le parcours à vos besoins réels.</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.1s">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+                        </div>
+                        <h3>Suivi individualisé</h3>
+                        <p>Formateur référent, évaluations régulières et retours personnalisés à chaque étape.</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.2s">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        </div>
+                        <h3>Pédagogie active</h3>
+                        <p>Jeux de rôle, mises en situation, documents authentiques et exercices concrets.</p>
+                    </div>
+                    <div class="value-card fade-up">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        </div>
+                        <h3>Accessibilité</h3>
+                        <p>Présentiel, distanciel ou mixte, avec adaptation à votre emploi du temps et au handicap.</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.1s">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg>
+                        </div>
+                        <h3>Démarche qualité</h3>
+                        <p>Processus structuré, suivi des indicateurs et amélioration continue de nos actions.</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.2s">
+                        <div class="value-icon-wrapper">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                        <h3>Satisfaction mesurée</h3>
+                        <p>Questionnaires à chaud et à froid (J+30) pour mesurer et améliorer la qualité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: La Formation -->
+        <section class="brochure-section">
+            <div class="brochure-container">
+                <div class="brochure-header fade-up">
+                    <span class="tag"><span class="dot"></span> La Formation</span>
+                    <h2 class="brochure-title">Français Langue Étrangère</h2>
+                    <p style="color: var(--clr-text-light); max-width: 800px; margin: 1.5rem auto 0; line-height: 1.6;">La formation FLE de Campus Supéria s’adresse aux adultes non francophones souhaitant apprendre ou perfectionner leur français, pour des raisons personnelles, sociales, professionnelles ou académiques. Construite autour d’une approche communicative et actionnelle, elle place l’apprenant en situation réelle dès les premières heures.</p>
+                </div>
+                
+                <div class="split-layout">
+                    <!-- Objectifs -->
+                    <div>
+                        <h3 style="font-family: var(--font-heading); color: var(--clr-text-dark); font-size: 1.8rem; margin-bottom: 2rem;">Cette formation vous permet de :</h3>
+                        <ul class="check-list fade-up">
+                            <li>Comprendre le français oral et écrit dans la vie quotidienne, sociale et professionnelle.</li>
+                            <li>Communiquer avec aisance : vous présenter, échanger, décrire, raconter et argumenter.</li>
+                            <li>Rédiger des écrits clairs et structurés adaptés au contexte.</li>
+                            <li>Progresser à votre rythme, du niveau A1 au niveau C2, selon vos objectifs.</li>
+                            <li>Gagner en autonomie pour vos démarches et votre intégration en France.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Box public & modalités -->
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div class="split-box fade-up">
+                            <h3>Public & prérequis</h3>
+                            <ul class="dot-list">
+                                <li>Adultes non francophones, tous profils.</li>
+                                <li>Aucun diplôme requis : niveau déterminé par un positionnement initial.</li>
+                                <li>Accessible dès 16 ans.</li>
+                            </ul>
+                        </div>
+                        <div class="split-box fade-up" style="--delay: 0.1s">
+                            <h3>Modalités & organisation</h3>
+                            <ul class="dot-list">
+                                <li>Présentiel à Neuilly-sur-Seine, distanciel ou mixte.</li>
+                                <li>Cours individuels ou petits groupes (8 max.).</li>
+                                <li>Durée de 15 à 120 h ; rythme intensif, extensif ou sur mesure.</li>
+                                <li>Entrées régulières, sous 2 à 4 semaines après validation du dossier.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Niveaux & Parcours -->
+        <section class="brochure-section" style="background: var(--clr-bg-main);">
+            <div class="brochure-container">
+                <div class="brochure-header fade-up">
+                    <span class="tag"><span class="dot"></span> Niveaux & Parcours</span>
+                    <h2 class="brochure-title">Niveaux — du A1 au C2</h2>
+                </div>
+                
+                <div class="niveau-grid">
+                    <div class="niveau-card fade-up">
+                        <div class="niveau-header">
+                            <div class="niveau-badge">A1</div>
+                            <div class="niveau-desc">Acquérir les bases pour communiquer simplement.</div>
+                        </div>
+                        <div class="niveau-details">
+                            <p><strong>Durée</strong> ≈ 30 h (6 sem.)</p>
+                            <p><strong>Méthodes</strong> Communicative, mises en situation concrètes.</p>
+                        </div>
+                    </div>
+                    <div class="niveau-card fade-up" style="--delay:0.1s">
+                        <div class="niveau-header">
+                            <div class="niveau-badge">A2</div>
+                            <div class="niveau-desc">Comprendre et utiliser des expressions courantes.</div>
+                        </div>
+                        <div class="niveau-details">
+                            <p><strong>Durée</strong> 40–50 h (6–8 sem.)</p>
+                            <p><strong>Méthodes</strong> Pratique orale renforcée, textes courts.</p>
+                        </div>
+                    </div>
+                    <div class="niveau-card fade-up" style="--delay:0.2s">
+                        <div class="niveau-header">
+                            <div class="niveau-badge">B1</div>
+                            <div class="niveau-desc">Communiquer de façon autonome sur des sujets familiers.</div>
+                        </div>
+                        <div class="niveau-details">
+                            <p><strong>Durée</strong> 45–60 h (6–10 sem.)</p>
+                            <p><strong>Méthodes</strong> Entraînement aux 4 compétences.</p>
+                        </div>
+                    </div>
+                    <div class="niveau-card fade-up">
+                        <div class="niveau-header">
+                            <div class="niveau-badge">B2</div>
+                            <div class="niveau-desc">S’exprimer clairement et en détail sur des sujets variés.</div>
+                        </div>
+                        <div class="niveau-details">
+                            <p><strong>Durée</strong> ≈ 60 h (8–10 sem.)</p>
+                            <p><strong>Méthodes</strong> Documents authentiques, expression écrite et orale.</p>
+                        </div>
+                    </div>
+                    <div class="niveau-card fade-up" style="--delay:0.1s">
+                        <div class="niveau-header">
+                            <div class="niveau-badge">C1</div>
+                            <div class="niveau-desc">Communiquer avec aisance en contexte professionnel.</div>
+                        </div>
+                        <div class="niveau-details">
+                            <p><strong>Durée</strong> 60–80 h (8–12 sem.)</p>
+                            <p><strong>Méthodes</strong> Études de cas, présentations et simulations.</p>
+                        </div>
+                    </div>
+                    <div class="niveau-card fade-up" style="--delay:0.2s">
+                        <div class="niveau-header">
+                            <div class="niveau-badge">C2</div>
+                            <div class="niveau-desc">Communiquer avec spontanéité, précision et nuance.</div>
+                        </div>
+                        <div class="niveau-details">
+                            <p><strong>Durée</strong> 70–90 h (10–14 sem.)</p>
+                            <p><strong>Méthodes</strong> Débats argumentés, productions soutenues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Financement -->
+        <section class="brochure-section">
+            <div class="brochure-container">
+                <div class="brochure-header fade-up">
+                    <span class="tag"><span class="dot"></span> Informations & Financement</span>
+                    <h2 class="brochure-title">Informations pratiques</h2>
+                </div>
+
+                <div style="background: #fdfbf7; border-radius: 12px; padding: 3rem; margin-bottom: 4rem;" class="fade-up">
+                    <h3 style="font-family: var(--font-heading); color: var(--clr-text-dark); margin-bottom: 2rem; font-size: 1.5rem;">Tarifs en cours individuel <span style="color:var(--clr-text-light); font-weight: 400; font-size:1.2rem;">— base 36 €/h</span></h3>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h4>15 h</h4>
+                            <p class="price">540 €</p>
+                        </div>
+                        <div class="pricing-card">
+                            <h4>20 h</h4>
+                            <p class="price">720 €</p>
+                        </div>
+                        <div class="pricing-card">
+                            <h4>30 h</h4>
+                            <p class="price">1 080 €</p>
+                        </div>
+                        <div class="pricing-card">
+                            <h4>40 h</h4>
+                            <p class="price">1 440 €</p>
+                        </div>
+                        <div class="pricing-card">
+                            <h4>50 h</h4>
+                            <p class="price">1 800 €</p>
+                        </div>
+                    </div>
+                    <p style="margin-top: 2rem; color: var(--clr-text-light); font-size: 0.9rem; text-align: center; font-style: italic;">Au-delà de 50 h et pour les formations en groupe, un devis personnalisé et gratuit est établi après le test de positionnement. Délai d’accès : 2 à 4 semaines. Accessibilité : locaux PMR, référent handicap, adaptations possibles.</p>
+                </div>
+                
+                <h3 style="font-family: var(--font-heading); color: var(--clr-text-dark); margin-bottom: 2rem; font-size: 1.8rem; text-align: center;" class="fade-up">Financement de votre formation</h3>
+                <div class="value-grid">
+                    <div class="value-card fade-up">
+                        <div class="value-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="6" y1="8" x2="6" y2="8"/><line x1="10" y1="8" x2="18" y2="8"/></svg></div>
+                        <h3>CPF</h3>
+                        <p>Compte personnel de formation, mobilisable sur moncompteformation.gouv.fr par tout actif.</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.1s">
+                        <div class="value-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/></svg></div>
+                        <h3>OPCO / Employeur</h3>
+                        <p>Prise en charge par votre employeur ou votre OPCO (plan de développement des compétences).</p>
+                    </div>
+                    <div class="value-card fade-up" style="--delay:0.2s">
+                        <div class="value-icon-wrapper"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg></div>
+                        <h3>France Travail</h3>
+                        <p>Aide individuelle à la formation (AIF) pour les demandeurs d’emploi, sous conditions.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;" class="fade-up">
+                    <a href="index.html#contact" class="btn btn-brand-orange" style="font-size: 1.1rem; padding: 1rem 3rem;">Demander un devis personnalisé</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <h3 class="footer-brand">Campus Superia</h3>
+                <div class="footer-bottom-brand">
+                    <img src="./assets/logo-icon.png" alt="Campus Superia Logo" class="footer-badge-img"
+                        style="height: 30px; width: auto;">
+                    <p class="copyright">&copy; 2026, Campus Superia</p>
+                </div>
+            </div>
+
+            <!-- Col 2: Menu -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#academics">Mission</a></li>
+                    <li><a href="programmes.html">Programme</a></li>
+                    <li><a href="index.html#contact">Contactez-nous</a></li>
+                    <li><a href="reclamations.html">Réclamations & Suggestions</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Informations administratives -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Documentation</h4>
+                <ul class="footer-links">
+                    <li><a href="./assets/Livret_Accueil_Campus_Superia_v2026_1.pdf" target="_blank">Livret d’accueil</a></li>
+                    <li><a href="./assets/Reglement_interieur_Campus_Superia_v2026.pdf" target="_blank">Règlement intérieur</a></li>
+                    <li><a href="accessibilite-handicap.html">Accessibilité & Handicap</a></li>
+                    <li><a href="accessibilite-handicap.html#contact-referent">Référent Handicap</a></li>
+                    <li><a href="./assets/CGV_Campus_Superia.pdf" target="_blank">CGV</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Socials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Suivez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/campus_superia" target="_blank"
+                            rel="noopener noreferrer">Instagram ↗</a></li>
+                    <li><a href="https://www.tiktok.com/@campussuperia?_r=1&_t=ZN-96ISLCCJ6s2" target="_blank"
+                            rel="noopener noreferrer">TikTok ↗</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Contactez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@campussuperia.com">contact@campussuperia.com</a></li>
+                    <li><a href="mailto:campussuperia@gmail.com">campussuperia@gmail.com</a></li>
+                    <li><a href="tel:+33781547503">+33 781 547 503</a></li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-brand-orange-full footer-btn">Inscrivez-vous</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=10"></script>
+    <script>
+        document.querySelectorAll('.site-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                const siteNav = document.querySelector('.site-nav');
+                if (siteNav) siteNav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

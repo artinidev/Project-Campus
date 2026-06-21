@@ -1,0 +1,122 @@
+        <section class="formations-section section-padding" id="formations">
+            <div class="container">
+                <div class="section-header text-center mb-5 fade-up">
+                    <span class="tag tag-new"><span class="diamond"></span> Nouveauté</span>
+                    <h2 class="section-title">Formations Linguistiques</h2>
+                    <p class="section-subtitle">Découvrez nos programmes conçus pour vous accompagner à chaque étape de
+                        votre apprentissage, du niveau élémentaire à la maîtrise parfaite.</p>
+                </div>
+            </div>
+
+            <div class="formations-grid">
+                <!-- A2 Level -->
+                <a href="#contact" class="formation-image-card">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/formation-new-1.jpg"
+                            alt="A2 Level">
+                        <div class="card-hover-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                            <div class="card-hover-text">
+                                <p class="card-subtitle">Acquisition des bases essentielles avec rigueur et méthode. Développement d’une première capacité d’expression fiable, permettant d’évoluer dans des situations simples et encadrées.</p>
+                            </div>
+                        </div>
+                        <div class="card-content-box">
+                            <div class="card-badge level-a2">01 A2</div>
+                            <h3 class="card-title">Niveau Pré-intermédiaire</h3>
+                        </div>
+                    </a>
+
+                    <!-- B1 Level -->
+                    <a href="#contact" class="formation-image-card">
+                        <div class="card-image-wrapper">
+                            <img src="./assets/formation-new-2.jpg"
+                            alt="B1 Level">
+                            <div class="card-hover-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                            <div class="card-hover-text">
+                                <p class="card-subtitle">Montée en compétence progressive vers une communication claire et cohérente. Capacité à interagir efficacement dans des contextes variés, y compris professionnels.</p>
+                            </div>
+                        </div>
+                        <div class="card-content-box">
+                            <div class="card-badge level-b1">02 B1</div>
+                            <h3 class="card-title">Niveau Intermédiaire</h3>
+                        </div>
+                    </a>
+
+                    <!-- B2 Level -->
+                    <a href="#contact" class="formation-image-card">
+                        <div class="card-image-wrapper">
+                            <img src="./assets/formation-new-3.jpg"
+                            alt="B2 Level">
+                            <div class="card-hover-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                            <div class="card-hover-text">
+                                <p class="card-subtitle">Maîtrise d’une expression fluide et structurée. Capacité à argumenter, convaincre et s’intégrer dans des environnements exigeants.</p>
+                            </div>
+                        </div>
+                        <div class="card-content-box">
+                            <div class="card-badge level-b2">03 B2</div>
+                            <h3 class="card-title">Niveau Avancé</h3>
+                        </div>
+                    </a>
+
+                    <!-- C1 Level -->
+                    <a href="#contact" class="formation-image-card">
+                        <div class="card-image-wrapper">
+                            <img src="./assets/formation-new-4.jpg"
+                            alt="C1 Level">
+                            <div class="card-hover-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                            <div class="card-hover-text">
+                                <p class="card-subtitle">Expression précise, nuancée et impactante. Aptitude à traiter des sujets complexes et à évoluer avec aisance dans des contextes à forte valeur intellectuelle.</p>
+                            </div>
+                        </div>
+                        <div class="card-content-box">
+                            <div class="card-badge level-c1">04 C1</div>
+                            <h3 class="card-title">Niveau Autonome</h3>
+                        </div>
+                    </a>
+
+                    <!-- C2 Level -->
+                    <a href="#contact" class="formation-image-card">
+                        <div class="card-image-wrapper">
+                            <img src="./assets/formation-new-5.jpg"
+                            alt="C2 Level">
+                            <div class="card-hover-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                            <div class="card-hover-text">
+                                <p class="card-subtitle">Maîtrise complète de la langue, avec finesse et exigence. Capacité à évoluer naturellement dans des environnements internationaux et hautement compétitifs.</p>
+                            </div>
+                        </div>
+                        <div class="card-content-box">
+                            <div class="card-badge level-c2">05 C2</div>
+                            <h3 class="card-title">Niveau Maîtrise</h3>
+                        </div>
+                    </a>
+                </div>
+        </section>

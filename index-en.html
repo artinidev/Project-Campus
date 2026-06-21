@@ -11,88 +11,652 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300..700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="style.css?v=13">
 </head>
 
 <body>
 
     <main>
+
+
+        <!-- Site Header (Navbar) -->
+        <header class="site-header">
+            <div class="logo-container">
+                <a href="index-en.html">
+                    <img src="./assets/logo-full.png" alt="Campus Superia Logo">
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu"
+                onclick="document.querySelector('.site-nav').classList.toggle('active')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="site-nav">
+                <a href="#about">About</a>
+                <a href="#academics">Mission</a>
+                <a href="programmes-en.html">Program</a>
+                <div class="nav-dropdown-wrapper">
+                    <a href="test-en.html" class="dropdown-trigger">
+                        <span>Pre-evaluation</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-links-col">
+                            <div class="dropdown-item opt-analyse">
+                                <a href="analyse-en.html">
+                                    <span class="item-title">Personalized Project Analysis</span>
+                                    <span class="item-desc">To support you in choosing your training, complete this
+                                        short questionnaire so our team can understand your background and goals.</span>
+                                </a>
+                            </div>
+                            <div class="dropdown-item opt-test">
+                                <a href="test-en.html">
+                                    <span class="item-title">Pre-evaluation</span>
+                                    <span class="item-desc">CAMPUS SUPERIA proposes a French placement test to evaluate
+                                        your current level, identify your needs, and guide you towards the right
+                                        path.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-preview-col">
+                            <div class="preview-img-container">
+                                <img src="./assets/hero.jpeg" class="preview-img img-default" alt="Campus Default">
+                                <img src="./assets/scroll-actual-2.jpg" class="preview-img img-analyse"
+                                    alt="Project Analysis">
+                                <img src="./assets/scroll-actual-1.jpg" class="preview-img img-test"
+                                    alt="French Placement Test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admissions Mega-Menu -->
+                <div class="nav-dropdown-wrapper">
+                    <a href="admissions-en.html" class="dropdown-trigger">
+                        <span>Admissions</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown admissions-mega">
+                        <!-- Col 1: Main Category Cards -->
+                        <div class="adm-column adm-col-main">
+                            <div class="dropdown-col-header">Admission</div>
+                            <div class="adm-cards-container">
+                                <div class="adm-card-btn active" data-target="candidature">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Apply to CAMPUS
+                                            SUPERIA</span></div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="adm-card-btn" data-target="financement">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Studies Financing</span>
+                                    </div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: Sub-category Cards -->
+                        <div class="adm-column adm-col-sub">
+                            <!-- Sub-panel for Candidature -->
+                            <div class="adm-sub-panel active" id="sub-panel-candidature">
+                                <div class="dropdown-col-header">Apply to Campus Superia</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn active" data-target="rentree-septembre">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Start in
+                                                September</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="rentree-fevrier">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Start in February</span>
+                                        </div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="procedure-internationale">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                <path
+                                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">International
+                                                Procedure</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-panel for Financement -->
+                            <div class="adm-sub-panel" id="sub-panel-financement">
+                                <div class="dropdown-col-header">Studies Financing</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn" data-target="financement-options">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <line x1="12" y1="10" x2="12" y2="10"></line>
+                                                <line x1="12" y1="14" x2="12" y2="14"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Financing Options</span>
+                                        </div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 3: Direct Link Lists -->
+                        <div class="adm-column adm-col-links">
+                            <div class="adm-links-panel active" id="links-panel-rentree-septembre">
+                                <div class="dropdown-col-header">Start in September</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bts-en.html">BTS Procedure</a></li>
+                                    <li><a href="admissions-bachelor-en.html">Bachelor Procedure</a></li>
+                                    <li><a href="admissions-bba-en.html">BBA Procedure</a></li>
+                                    <li><a href="admissions-msc-en.html">Master of Science Procedure</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-rentree-fevrier">
+                                <div class="dropdown-col-header">Start in February</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bachelor-en.html?rentree=fevrier">Bachelor Procedure</a>
+                                    </li>
+                                    <li><a href="admissions-bba-en.html?rentree=fevrier">BBA Procedure</a></li>
+                                    <li><a href="admissions-msc-en.html?rentree=fevrier">Master of Science Procedure</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-procedure-internationale">
+                                <div class="dropdown-col-header">International Procedure</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-international-en.html">International Admission Bachelor</a>
+                                    </li>
+                                    <li><a href="admissions-international-en.html">International Admission BBA</a></li>
+                                    <li><a href="admissions-international-en.html">International Admission MSc</a></li>
+                                    <li><a href="admissions-international-en.html#visa">Student Visa</a></li>
+                                    <li><a href="admissions-international-en.html#visa">Student Housing</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-financement-options">
+                                <div class="dropdown-col-header">Studies Financing</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-frais-en.html">Tuition fees</a></li>
+                                    <li><a href="admissions-bourses-en.html">Scholarships</a></li>
+                                    <li><a href="admissions-bourses-en.html#cpf">Financing</a></li>
+                                    <li><a href="admissions-frais-en.html#options">Installment Plan</a></li>
+                                    <li><a href="admissions-bourses-en.html#alternance">Work-Study</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Col 4: Preview Card -->
+                        <div class="adm-column adm-col-preview">
+                            <div class="adm-preview-container">
+                                <div class="adm-preview-card active" data-preview="rentree-septembre">
+                                    <img src="./assets/adm-preview-september.png" alt="September Intake">
+                                </div>
+                                <div class="adm-preview-card" data-preview="rentree-fevrier">
+                                    <img src="./assets/adm-preview-september.png" alt="February Intake">
+                                </div>
+                                <div class="adm-preview-card" data-preview="procedure-internationale">
+                                    <img src="./assets/adm-preview-international.png" alt="International Procedure">
+                                </div>
+                                <div class="adm-preview-card" data-preview="financement-options">
+                                    <img src="./assets/adm-preview-scholarship.png" alt="Studies Financing">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="partenariats-en.html">Partnerships</a>
+                <a href="index.html" class="nav-lang" aria-label="Switch language to French">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    <span>FR</span>
+                </a>
+                <a href="#contact" class="nav-cta">Contact Us</a>
+            </nav>
+        </header>
+
         <!-- Hero Section -->
         <section class="hero-section">
-            <div class="hero-image-container fade-up">
+            <div class="hero-image-wrapper fade-up">
                 <img src="./assets/hero.jpeg" alt="Campus Superia Team" class="hero-img"
                     onerror="this.src='https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop'">
-                <div class="hero-badge"><img src="./assets/logo-icon.png" alt="Campus Superia Logo"
-                        style="height: 40px; width: auto;"></div>
-            </div>
-            <div class="hero-content">
-                <!-- Mobile Nav Toggle -->
-                <button class="mobile-nav-toggle" aria-label="Toggle menu"
-                    onclick="document.querySelector('.hero-nav').classList.toggle('active')">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
-
-                <nav class="hero-nav">
-                    <a href="#about" class="active nav-link">
-                        <span class="nav-text-container"><span class="text-wrapper"
-                                data-text="About">About</span></span>
-                    </a>
-                    <a href="#academics" class="nav-link">
-                        <span class="nav-text-container"><span class="text-wrapper"
-                                data-text="Mission">Mission</span></span>
-                    </a>
-                    <a href="#formations" class="nav-link">
-                        <span class="nav-text-container"><span class="text-wrapper"
-                                data-text="Program">Program</span></span>
-                    </a>
-                    <a href="index.html" class="nav-link" style="margin-right: 1rem;">
-                        <span class="nav-text-container"><span class="text-wrapper" data-text="FR">FR</span></span>
-                    </a>
-                    <a href="#contact" class="btn-text nav-link-contact">
-                        <span class="nav-text-container"><span class="text-wrapper" data-text="Contact Us">Contact
-                                Us</span></span>
-                    </a>
-                </nav>
-
-                <div class="hero-text-area fade-up">
-                    <h1 class="display-title">Unlocking True<br>Potential Through<br>Individual Strengths</h1>
-                    <p class="hero-subtitle">We nurture each student's unique strengths, helping them grow into
-                        confident, capable individuals ready to succeed.</p>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat-item fade-in" style="--delay: 0.1s">
-                        <h4>High Graduation Rate</h4>
-                        <p>We prepare students for success with a strong graduation rate.</p>
-                    </div>
-                    <div class="stat-item fade-in" style="--delay: 0.2s">
-                        <h4>Personalized Attention</h4>
-                        <p>We ensure focused learning with a low student-teacher ratio.</p>
-                    </div>
-                    <div class="stat-item fade-in" style="--delay: 0.3s">
-                        <h4>Active Engagement</h4>
-                        <p>We boost development with high extracurricular participation.</p>
+                <div class="hero-overlay">
+                    <div class="hero-layout">
+                        <div class="hero-text-area">
+                            <h1 class="display-title">Unlocking True<br>Potential Through<br>Individual Strengths</h1>
+                            <p class="hero-subtitle">We nurture each student's unique strengths, helping them grow into
+                                confident, capable individuals ready to succeed.</p>
+                            <div class="hero-search-gadget">
+                                <div class="gadget-select-group">
+                                    <label for="gadget-program">Program</label>
+                                    <div class="select-wrapper">
+                                        <select id="gadget-program">
+                                            <option value="">All programs</option>
+                                            <option value="BTS">BTS (Bac+2 Work-Study)</option>
+                                            <option value="Bachelor">Bachelor</option>
+                                            <option value="Anglais">English Track</option>
+                                            <option value="A2">Pre-intermediate - A2</option>
+                                            <option value="B1">Intermediate - B1</option>
+                                            <option value="B2">Advanced - B2</option>
+                                            <option value="C1">Autonomous - C1</option>
+                                            <option value="C2">Mastery - C2</option>
+                                        </select>
+                                        <span class="select-arrow">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="gadget-select-group">
+                                    <label for="gadget-specialization">Specialization</label>
+                                    <div class="select-wrapper">
+                                        <select id="gadget-specialization">
+                                            <option value="">All specializations</option>
+                                            <option value="general">General French</option>
+                                            <option value="business">Professional & Business French</option>
+                                            <option value="exam">Exam Preparation</option>
+                                            <option value="eloquence">Eloquence & Leadership</option>
+                                        </select>
+                                        <span class="select-arrow">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="gadget-select-group">
+                                    <label for="gadget-campus">Campus / Format</label>
+                                    <div class="select-wrapper">
+                                        <select id="gadget-campus">
+                                            <option value="">All campuses</option>
+                                            <option value="paris">Paris (Neuilly-sur-Seine)</option>
+                                            <option value="online">Online / E-Learning</option>
+                                        </select>
+                                        <span class="select-arrow">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="gadget-search-btn" id="btn-search-gadget" aria-label="Search">
+                                    <span>Search</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-gadgets">
+                            <div class="gadget-card" data-target="2500" data-suffix="+">
+                                <div class="gadget-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <div class="gadget-number" data-target="2500">0</div>
+                                <div class="gadget-label">Enrolled students</div>
+                            </div>
+                            <div class="gadget-card" data-target="1800" data-suffix="+">
+                                <div class="gadget-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                    </svg>
+                                </div>
+                                <div class="gadget-number" data-target="1800">0</div>
+                                <div class="gadget-label">Graduates</div>
+                            </div>
+                            <div class="gadget-card" data-target="50" data-suffix="+">
+                                <div class="gadget-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                                    </svg>
+                                </div>
+                                <div class="gadget-number" data-target="50">0</div>
+                                <div class="gadget-label">Available courses</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonial Banner -->
-        <section class="testimonial-banner split-50 fade-up">
-            <div class="testimonial-text">
-                <p>"This school has been amazing. The supportive teachers and personalized attention have helped me
-                    excel academically and personally. I feel confident and well-prepared for the future."</p>
-                <span class="author">Jack M.</span>
+        <!-- Testimonials Marquee Section -->
+        <section class="testimonials-marquee-section">
+            <div class="container">
+                <div class="section-header text-center mb-5 fade-up">
+                    <span class="tag"><span class="dot"></span> Testimonials</span>
+                    <h2 class="section-title" style="color: var(--clr-text-dark);">They Succeeded with Campus Superia
+                    </h2>
+                    <p class="section-subtitle" style="margin:.75rem auto 0; max-width:600px;">Discover the experiences
+                        of our students in French, BTS, Bachelor, BBA, and Master programs.</p>
+                </div>
             </div>
-            <div class="banner-cta split-50">
-                <a href="#contact" class="cta-block cta-orange">Enroll Today</a>
-                <a href="#" class="cta-block cta-beige">About School</a>
+            <div class="testimonials-marquee-container">
+                <!-- Row 1: Left to Right -->
+                <div class="marquee-row left-to-right">
+                    <!-- Set 1 -->
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"Campus Superia allowed me to obtain my B2 naturalization certificate
+                            after 6 months of intensive training. The support is exceptional."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-fle">AK</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Amina K.</span>
+                                <span class="author-role">B2 Level — Naturalization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"I was working full-time. Thanks to the live online format, I was able
+                            to balance work and training without any compromise. Highly recommend!"</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-fle">MT</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Mehdi T.</span>
+                                <span class="author-role">Professional French</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"My DELF exam was in 8 weeks. The intensive simulations gave me the
+                            exact tools to pass with flying colors."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-fle">SB</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Sarah B.</span>
+                                <span class="author-role">DELF B2 Preparation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The work-study BTS is incredible. The tuition fees are 100% funded and
+                            the corporate search coaching is ultra-efficient."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-bts">YA</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Youssef A.</span>
+                                <span class="author-role">BTS GPME Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Set 2 (Duplicate for loop) -->
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"Campus Superia allowed me to obtain my B2 naturalization certificate
+                            after 6 months of intensive training. The support is exceptional."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-fle">AK</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Amina K.</span>
+                                <span class="author-role">B2 Level — Naturalization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"I was working full-time. Thanks to the live online format, I was able
+                            to balance work and training without any compromise. Highly recommend!"</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-fle">MT</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Mehdi T.</span>
+                                <span class="author-role">Professional French</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"My DELF exam was in 8 weeks. The intensive simulations gave me the
+                            exact tools to pass with flying colors."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-fle">SB</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Sarah B.</span>
+                                <span class="author-role">DELF B2 Preparation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The work-study BTS is incredible. The tuition fees are 100% funded and
+                            the corporate search coaching is ultra-efficient."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-bts">YA</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Youssef A.</span>
+                                <span class="author-role">BTS GPME Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Right to Left -->
+                <div class="marquee-row right-to-left">
+                    <!-- Set 1 -->
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The excellence scholarship gave me peace of mind to focus on my
+                            learning. Responsive and dynamic teaching team."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-bachelor">FM</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Fatou M.</span>
+                                <span class="author-role">Bachelor Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The public speaking program transformed my voice. A true
+                            transformation in 6 weeks that helps me every day in my company."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-fle">PS</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Priya S.</span>
+                                <span class="author-role">Eloquence &amp; Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The professional immersion in the 3rd year allowed me to secure a
+                            permanent job even before graduating from my BBA."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-bba">TL</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Thomas L.</span>
+                                <span class="author-role">BBA Graduate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The professional guest speakers are brilliant and bring concrete case
+                            studies. The partner company network is a massive asset."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-msc">SR</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Sofia R.</span>
+                                <span class="author-role">MSc Finance Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Set 2 (Duplicate for loop) -->
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The excellence scholarship gave me peace of mind to focus on my
+                            learning. Responsive and dynamic teaching team."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-bachelor">FM</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Fatou M.</span>
+                                <span class="author-role">Bachelor Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The public speaking program transformed my voice. A true
+                            transformation in 6 weeks that helps me every day in my company."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-fle">PS</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Priya S.</span>
+                                <span class="author-role">Eloquence &amp; Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The professional immersion in the 3rd year allowed me to secure a
+                            permanent job even before graduating from my BBA."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-bba">TL</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Thomas L.</span>
+                                <span class="author-role">BBA Graduate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card">
+                        <div class="marquee-stars">★★★★★</div>
+                        <p class="marquee-quote">"The professional guest speakers are brilliant and bring concrete case
+                            studies. The partner company network is a massive asset."</p>
+                        <div class="marquee-author">
+                            <div class="marquee-avatar color-msc">SR</div>
+                            <div class="marquee-author-info">
+                                <span class="author-name">Sofia R.</span>
+                                <span class="author-role">MSc Finance Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Retain CTA blocks under the marquee for page flow -->
+            <div class="container text-center mb-5" style="margin-top: 4rem;">
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#contact" class="btn btn-brand-orange" style="border-radius: 4px;">Enroll Today →</a>
+                    <a href="admissions-en.html" class="btn btn-outline-dark" style="border-radius: 4px;">Learn More</a>
+                </div>
             </div>
         </section>
+
 
         <!-- Distinctive Features Section -->
         <section class="features-section" id="about">
@@ -218,10 +782,10 @@
             <div class="container">
                 <div class="section-header text-center mb-5 fade-up">
                     <span class="tag"><span class="dot"></span> Journey</span>
-                    <h2 class="section-title">Your Learning Journey</h2>
-                    <p class="section-subtitle">A structured, personalized support system designed to guarantee your success.</p>
+                    <h2 class="section-title">Your Journey at Campus Superia</h2>
+                    <p class="section-subtitle">A structured support system to guide you through your education, whether it's a BTS, a Bachelor, a Master, or a language program.</p>
                 </div>
-                
+
                 <div class="story-timeline">
                     <!-- Background Line and progressive Fill Line -->
                     <div class="timeline-line-bg"></div>
@@ -232,7 +796,7 @@
                         <div class="step-number">1</div>
                         <div class="step-content">
                             <h3>Initial Assessment</h3>
-                            <p>Analysis of your level, your needs, and your goals.</p>
+                            <p>Analysis of your profile, level, needs, and goals to define your training project.</p>
                         </div>
                     </div>
                     <!-- Step 2 (Right) -->
@@ -240,7 +804,7 @@
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <h3>Program Integration</h3>
-                            <p>Setting up your learning path and providing access to educational tools.</p>
+                            <p>Selection of the adapted pathway: BTS, Bachelor, Master, or language training, with access to pedagogical tools.</p>
                         </div>
                     </div>
                     <!-- Step 3 (Left) -->
@@ -248,7 +812,7 @@
                         <div class="step-number">3</div>
                         <div class="step-content">
                             <h3>Training & Support</h3>
-                            <p>Classes, educational guidance, and practical exercises.</p>
+                            <p>Class attendance, personalized academic guidance, and practical application through concrete projects and exercises.</p>
                         </div>
                     </div>
                     <!-- Step 4 (Right) -->
@@ -256,7 +820,7 @@
                         <div class="step-number">4</div>
                         <div class="step-content">
                             <h3>Progress Tracking</h3>
-                            <p>Intermediate reviews and personalized adjustments.</p>
+                            <p>Regular evaluations, mid-term assessments, and personalized adjustments to foster your success.</p>
                         </div>
                     </div>
                     <!-- Step 5 (Left) -->
@@ -264,135 +828,11 @@
                         <div class="step-number">5</div>
                         <div class="step-content">
                             <h3>Final Validation</h3>
-                            <p>Assessment of skills acquired and guidance for your next steps.</p>
+                            <p>Skills assessment, degree or certification completion, and guidance toward further studies or professional integration.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Formations Linguistiques Section -->
-        <section class="formations-section section-padding" id="formations">
-            <div class="container">
-                <div class="section-header text-center mb-5 fade-up">
-                    <span class="tag tag-new"><span class="diamond"></span> New</span>
-                    <h2 class="section-title">Language Training</h2>
-                    <p class="section-subtitle">Discover our programs designed to support you at every stage of your
-                        learning journey, from elementary to perfect mastery.</p>
-                </div>
-            </div>
-
-            <div class="formations-grid">
-                    <!-- A2 Level -->
-                    <a href="#contact" class="formation-image-card">
-                        <div class="card-image-wrapper">
-                            <img src="./assets/formation-new-1.jpg"
-                                alt="A2 Level">
-                            <div class="card-hover-arrow">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="card-hover-text">
-                                    <p class="card-subtitle">Acquiring essential basics with rigor and method. Developing an initial, reliable capacity for expression, enabling communication in simple, structured situations.</p>
-                                </div>
-                            </div>
-                            <div class="card-content-box">
-                                <div class="card-badge level-a2">01 A2</div>
-                                <h3 class="card-title">Pre-intermediate Level</h3>
-                            </div>
-                        </a>
-
-                        <!-- B1 Level -->
-                        <a href="#contact" class="formation-image-card">
-                            <div class="card-image-wrapper">
-                                <img src="./assets/formation-new-2.jpg"
-                                alt="B1 Level">
-                                <div class="card-hover-arrow">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="card-hover-text">
-                                    <p class="card-subtitle">Progressive skill development towards clear and coherent communication. Ability to interact effectively in varied contexts, including professional ones.</p>
-                                </div>
-                            </div>
-                            <div class="card-content-box">
-                                <div class="card-badge level-b1">02 B1</div>
-                                <h3 class="card-title">Intermediate Level</h3>
-                            </div>
-                        </a>
-
-                        <!-- B2 Level -->
-                        <a href="#contact" class="formation-image-card">
-                            <div class="card-image-wrapper">
-                                <img src="./assets/formation-new-3.jpg"
-                                alt="B2 Level">
-                                <div class="card-hover-arrow">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="card-hover-text">
-                                    <p class="card-subtitle">Mastery of fluid and structured expression. Ability to argue, persuade, and integrate into demanding environments.</p>
-                                </div>
-                            </div>
-                            <div class="card-content-box">
-                                <div class="card-badge level-b2">03 B2</div>
-                                <h3 class="card-title">Advanced Level</h3>
-                            </div>
-                        </a>
-
-                        <!-- C1 Level -->
-                        <a href="#contact" class="formation-image-card">
-                            <div class="card-image-wrapper">
-                                <img src="./assets/formation-new-4.jpg"
-                                alt="C1 Level">
-                                <div class="card-hover-arrow">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="card-hover-text">
-                                    <p class="card-subtitle">Precise, nuanced, and impactful expression. Aptitude to handle complex subjects and operate smoothly in intellectually demanding contexts.</p>
-                                </div>
-                            </div>
-                            <div class="card-content-box">
-                                <div class="card-badge level-c1">04 C1</div>
-                                <h3 class="card-title">Autonomous Level</h3>
-                            </div>
-                        </a>
-
-                        <!-- C2 Level -->
-                        <a href="#contact" class="formation-image-card">
-                            <div class="card-image-wrapper">
-                                <img src="./assets/formation-new-5.jpg"
-                                alt="C2 Level">
-                                <div class="card-hover-arrow">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <polyline points="12 5 19 12 12 19"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="card-hover-text">
-                                    <p class="card-subtitle">Complete mastery of the language, with finesse and precision. Capacity to function naturally in international and highly competitive environments.</p>
-                                </div>
-                            </div>
-                            <div class="card-content-box">
-                                <div class="card-badge level-c2">05 C2</div>
-                                <h3 class="card-title">Mastery Level</h3>
-                            </div>
-                        </a>
-                </div>
         </section>
 
         <!-- Lead Generation Form Section -->
@@ -437,22 +877,32 @@
                             <!-- Step 1: Personal Information -->
                             <div class="form-step form-step-active" data-step="1">
                                 <div class="form-group">
-                                    <label for="nom">Full Name <span class="text-brand-orange">*</span></label>
-                                    <input type="text" id="nom" name="nom"
-                                        placeholder="E.g.: John Doe – so we can identify you properly"
-                                        required>
+                                    <label for="nom">Last Name <span class="text-brand-orange">*</span></label>
+                                    <input type="text" id="nom" name="nom" placeholder="Your last name" required>
                                 </div>
-
+                                <div class="form-group">
+                                    <label for="prenom">First Name <span class="text-brand-orange">*</span></label>
+                                    <input type="text" id="prenom" name="prenom" placeholder="Your first name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="naissance">Date of Birth <span
+                                            class="text-brand-orange">*</span></label>
+                                    <input type="date" id="naissance" name="naissance" required>
+                                </div>
                                 <div class="form-group">
                                     <label for="email">Email <span class="text-brand-orange">*</span></label>
-                                    <input type="email" id="email" name="email"
-                                        placeholder="example@email.com ↗ – to receive our information and confirmation"
+                                    <input type="email" id="email" name="email" placeholder="example@email.com"
                                         required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telephone">Phone <span class="text-brand-orange">*</span></label>
-                                    <input type="tel" id="telephone" name="telephone"
-                                        placeholder="E.g.: +33 6 12 34 56 78 – for a quick contact if needed"
+                                    <input type="tel" id="telephone" name="telephone" placeholder="+33 6 XX XX XX XX"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ville">City of Residence <span
+                                            class="text-brand-orange">*</span></label>
+                                    <input type="text" id="ville" name="ville" placeholder="E.g.: Paris, Lyon..."
                                         required>
                                 </div>
                                 <div class="form-actions form-actions-right">
@@ -460,53 +910,42 @@
                                 </div>
                             </div>
 
-                            <!-- Step 2: Training Details -->
+                            <!-- Step 2: Desired Program -->
                             <div class="form-step" data-step="2">
                                 <div class="form-group">
-                                    <label for="langue">Desired Language <span
+                                    <label for="formation_souhaitee">Desired Program <span
                                             class="text-brand-orange">*</span></label>
-                                    <select id="langue" name="langue" required>
-                                        <option value="" disabled selected>Options: French, English</option>
-                                        <option value="fr">French</option>
-                                        <option value="en">English</option>
+                                    <select id="formation_souhaitee" name="formation_souhaitee" required>
+                                        <option value="" disabled selected>Select a program</option>
+                                        <option value="BTS">BTS</option>
+                                        <option value="Bachelor">Bachelor</option>
+                                        <option value="Master">Master</option>
+                                        <option value="Vocational Training">Vocational Training</option>
+                                        <option value="Other">Other</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="niveau">Current Level <span class="text-brand-orange">*</span></label>
-                                    <select id="niveau" name="niveau" required>
-                                        <option value="" disabled selected>Options: Beginner, Intermediate, Advanced
-                                        </option>
-                                        <option value="debutant">Beginner</option>
-                                        <option value="intermediaire">Intermediate</option>
-                                        <option value="avance">Advanced</option>
-                                    </select>
+                                    <label for="formation_visee">Target Program Name <span
+                                            class="text-brand-orange">*</span></label>
+                                    <input type="text" id="formation_visee" name="formation_visee"
+                                        placeholder="E.g.: BTS MCO, Bachelor Marketing..." required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="objectif">Personal Objective <span
-                                            class="text-brand-orange">*</span></label>
-                                    <select id="objectif" name="objectif" required>
-                                        <option value="" disabled selected>Select an objective</option>
-                                        <optgroup label="Integration in France">
-                                            <option value="naturalisation">Naturalization</option>
-                                            <option value="sejour">Residence Permit / Residence</option>
-                                            <option value="prepa_tef_dfp">TEF / DFP / Civic Test Preparation</option>
-                                            <option value="francais_pro">Professional French</option>
-                                            <option value="anglais_pro">Professional English</option>
-                                        </optgroup>
-                                        <optgroup label="BTS Preparation">
-                                            <option value="etudes_france">Studies in France</option>
-                                        </optgroup>
-                                    </select>
+                                    <label for="niveau_actuel">Current Education Level (Last degree obtained / current
+                                        level) <span class="text-brand-orange">*</span></label>
+                                    <input type="text" id="niveau_actuel" name="niveau_actuel"
+                                        placeholder="E.g.: High School Diploma, Bachelor's Degree..." required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="type_formation">Desired Training Type <span
+                                    <label for="situation_actuelle">Current Situation <span
                                             class="text-brand-orange">*</span></label>
-                                    <select id="type_formation" name="type_formation" required>
-                                        <option value="" disabled selected>Select a type</option>
-                                        <option value="intensif">Intensive course</option>
-                                        <option value="hebdomadaire">Weekly course</option>
-                                        <option value="soir">Evening course</option>
-                                        <option value="mixte">Mixed</option>
+                                    <select id="situation_actuelle" name="situation_actuelle" required>
+                                        <option value="" disabled selected>Select your situation</option>
+                                        <option value="Student">Student</option>
+                                        <option value="Employee">Employee</option>
+                                        <option value="Job Seeker">Job Seeker</option>
+                                        <option value="Career Transition">Career Transition</option>
+                                        <option value="Other">Other</option>
                                     </select>
                                 </div>
                                 <div class="form-actions">
@@ -515,27 +954,38 @@
                                 </div>
                             </div>
 
-                            <!-- Step 3: Additional Information -->
+                            <!-- Step 3: Pace & Motivation -->
                             <div class="form-step" data-step="3">
                                 <div class="form-group">
-                                    <label for="commentaire">Comment or details</label>
-                                    <textarea id="commentaire" name="commentaire"
-                                        placeholder="E.g.: I would like a schedule adapted to my work hours"
-                                        rows="4"></textarea>
+                                    <label for="rythme_souhaite">Desired Pace <span
+                                            class="text-brand-orange">*</span></label>
+                                    <select id="rythme_souhaite" name="rythme_souhaite" required>
+                                        <option value="" disabled selected>Select desired pace</option>
+                                        <option value="Initial">Initial</option>
+                                        <option value="Alternance">Work-study (Alternance)</option>
+                                        <option value="Formation continue">Continuing Education</option>
+                                        <option value="À distance / Hybride">Online / Hybrid</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="motivation">Candidate Motivation <span
+                                            class="text-brand-orange">*</span></label>
+                                    <textarea id="motivation" name="motivation"
+                                        placeholder="Briefly describe your project and objectives..." rows="4"
+                                        required></textarea>
                                 </div>
                                 <div class="form-group checkbox-group">
                                     <label class="custom-checkbox">
                                         <input type="checkbox" id="rgpd" name="rgpd" required>
                                         <span class="checkmark"></span>
-                                        <span class="checkbox-text">I consent to Campus Superia collecting and
-                                            using my data to respond to my request, in accordance with the
-                                            GDPR regulations. <a href="#">[Privacy Policy]</a> <span
+                                        <span class="checkbox-text">I consent to Campus Superia collecting and using my
+                                            data. <a href="#">[Privacy Policy]</a> <span
                                                 class="text-brand-orange">*</span></span>
                                     </label>
                                 </div>
                                 <div class="form-actions">
                                     <button type="button" class="btn btn-outline-dark btn-prev">Previous</button>
-                                    <button type="submit" class="btn btn-brand-orange-full">Send my request</button>
+                                    <button type="submit" class="btn btn-brand-orange-full">Submit Application</button>
                                 </div>
                             </div>
                         </form>
@@ -553,38 +1003,47 @@
                 </div>
                 <div class="faq-accordion">
                     <div class="faq-item">
-                        <button class="faq-question">Who can join Campus Superia?<span
-                                class="faq-icon"></span></button>
+                        <button class="faq-question">Who can join Campus Superia?<span class="faq-icon"></span></button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">Campus Superia welcomes learners from international backgrounds wishing to develop their mastery of French, pursue an academic project in France, or strengthen their skills in a stimulating and demanding educational environment.</div>
+                            <div class="faq-answer-content">Campus Superia welcomes learners from international
+                                backgrounds wishing to develop their mastery of French, pursue an academic project in
+                                France, or strengthen their skills in a stimulating and demanding educational
+                                environment.</div>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">How can I apply?<span
-                                class="faq-icon"></span></button>
+                        <button class="faq-question">How can I apply?<span class="faq-icon"></span></button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">You can send your application directly via the website form or contact the Campus Superia team to start your registration.</div>
+                            <div class="faq-answer-content">You can send your application directly via the website form
+                                or contact the Campus Superia team to start your registration.</div>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <button class="faq-question">What vision guides the educational experience at Campus Superia?<span
-                                class="faq-icon"></span></button>
+                        <button class="faq-question">What vision guides the educational experience at Campus
+                            Superia?<span class="faq-icon"></span></button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">Campus Superia was designed as a learning space where mastery of the French language becomes a lever for personal, academic, and professional growth. Each program is designed to accompany learners in building an ambitious and sustainable future.</div>
+                            <div class="faq-answer-content">Campus Superia was designed as a learning space where
+                                mastery of the French language becomes a lever for personal, academic, and professional
+                                growth. Each program is designed to accompany learners in building an ambitious and
+                                sustainable future.</div>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">What learning paths are offered?<span
                                 class="faq-icon"></span></button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">Campus Superia offers French as a Foreign Language programs as well as vocational training allowing students to prepare for degree courses, notably towards BTS, and to access new academic or professional perspectives.</div>
+                            <div class="faq-answer-content">Campus Superia offers French as a Foreign Language programs
+                                as well as vocational training allowing students to prepare for degree courses, notably
+                                towards BTS, and to access new academic or professional perspectives.</div>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">What prospects can open up after training at Campus Superia?<span
                                 class="faq-icon"></span></button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">The programs allow students to strengthen language skills, pursue higher education in France, or develop qualifications valued in the job market.</div>
+                            <div class="faq-answer-content">The programs allow students to strengthen language skills,
+                                pursue higher education in France, or develop qualifications valued in the job market.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -608,7 +1067,7 @@
         </section>
     </main>
 
-    <!-- Site Footer -->
+<!-- Site Footer -->
     <footer class="site-footer">
         <div class="footer-container">
             <!-- Col 1: Brand -->
@@ -625,39 +1084,56 @@
             <div class="footer-col">
                 <h4 class="footer-heading">Menu</h4>
                 <ul class="footer-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#academics">Mission</a></li>
-                    <li><a href="#formations">Program</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#academics">Mission</a></li>
+                    <li><a href="programmes.html">Programme</a></li>
+                    <li><a href="index.html#contact">Contactez-nous</a></li>
+                    <li><a href="reclamations.html">Réclamations & Suggestions</a></li>
                 </ul>
             </div>
 
-            <!-- Col 3: Socials -->
+            <!-- Col 3: Informations administratives -->
             <div class="footer-col">
-                <h4 class="footer-heading">Follow Us</h4>
+                <h4 class="footer-heading">Documentation</h4>
                 <ul class="footer-links">
-                    <li><a href="https://www.instagram.com/campussuperia?igsh=enNyajIwdm40aTk=" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
-                    <li><a href="https://www.tiktok.com/@campus.superia?_r=1&_t=ZN-95tYKhlaZ4Y" target="_blank" rel="noopener noreferrer">TikTok ↗</a></li>
+                    <li><a href="./assets/Livret_Accueil_Campus_Superia_v2026_1.pdf" target="_blank">Livret d’accueil</a></li>
+                    <li><a href="./assets/Reglement_interieur_Campus_Superia_v2026.pdf" target="_blank">Règlement intérieur</a></li>
+                    <li><a href="accessibilite-handicap.html">Accessibilité & Handicap</a></li>
+                    <li><a href="accessibilite-handicap.html#contact-referent">Référent Handicap</a></li>
+                    <li><a href="./assets/CGV_Campus_Superia.pdf" target="_blank">CGV</a></li>
                 </ul>
             </div>
 
-            <!-- Col 4: Contact -->
+            <!-- Col 4: Socials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Suivez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/campus_superia" target="_blank"
+                            rel="noopener noreferrer">Instagram ↗</a></li>
+                    <li><a href="https://www.tiktok.com/@campussuperia?_r=1&_t=ZN-96ISLCCJ6s2" target="_blank"
+                            rel="noopener noreferrer">TikTok ↗</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact -->
             <div class="footer-col contact-col">
-                <h4 class="footer-heading">Get In Touch</h4>
+                <h4 class="footer-heading">Contactez-nous</h4>
                 <ul class="footer-links">
                     <li><a href="mailto:contact@campussuperia.com">contact@campussuperia.com</a></li>
+                    <li><a href="mailto:campussuperia@gmail.com">campussuperia@gmail.com</a></li>
                     <li><a href="tel:+33781547503">+33 781 547 503</a></li>
                 </ul>
-                <a href="#contact" class="btn btn-brand-orange-full footer-btn">Enroll Today</a>
+                <a href="index.html#contact" class="btn btn-brand-orange-full footer-btn">Inscrivez-vous</a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js?v=8"></script>
+    <script src="script.js?v=10"></script>
     <script>
-        document.querySelectorAll('.hero-nav a').forEach(link => {
+        document.querySelectorAll('.site-nav a').forEach(link => {
             link.addEventListener('click', () => {
-                document.querySelector('.hero-nav').classList.remove('active');
+                const siteNav = document.querySelector('.site-nav');
+                if (siteNav) siteNav.classList.remove('active');
             });
         });
     </script>

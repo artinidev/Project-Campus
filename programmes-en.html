@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Campus Superia - Programmes</title>
+    <!-- Google Fonts: Roboto Serif and Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300..700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=13">
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <div class="logo-container">
+                <a href="index-en.html">
+                    <img src="./assets/logo-full.png" alt="Campus Superia Logo">
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu"
+                onclick="document.querySelector('.site-nav').classList.toggle('active')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="site-nav">
+                <a href="#about">About</a>
+                <a href="#academics">Mission</a>
+                <a href="programmes-en.html">Program</a>
+                <div class="nav-dropdown-wrapper">
+                    <a href="test-en.html" class="dropdown-trigger">
+                        <span>Pre-evaluation</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-links-col">
+                            <div class="dropdown-item opt-analyse">
+                                <a href="analyse-en.html">
+                                    <span class="item-title">Personalized Project Analysis</span>
+                                    <span class="item-desc">To support you in choosing your training, complete this
+                                        short questionnaire so our team can understand your background and goals.</span>
+                                </a>
+                            </div>
+                            <div class="dropdown-item opt-test">
+                                <a href="test-en.html">
+                                    <span class="item-title">Pre-evaluation</span>
+                                    <span class="item-desc">CAMPUS SUPERIA proposes a French placement test to evaluate
+                                        your current level, identify your needs, and guide you towards the right
+                                        path.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-preview-col">
+                            <div class="preview-img-container">
+                                <img src="./assets/hero.jpeg" class="preview-img img-default" alt="Campus Default">
+                                <img src="./assets/scroll-actual-2.jpg" class="preview-img img-analyse"
+                                    alt="Project Analysis">
+                                <img src="./assets/scroll-actual-1.jpg" class="preview-img img-test"
+                                    alt="French Placement Test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admissions Mega-Menu -->
+                <div class="nav-dropdown-wrapper">
+                    <a href="admissions-en.html" class="dropdown-trigger">
+                        <span>Admissions</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown admissions-mega">
+                        <!-- Col 1: Main Category Cards -->
+                        <div class="adm-column adm-col-main">
+                            <div class="dropdown-col-header">Admission</div>
+                            <div class="adm-cards-container">
+                                <div class="adm-card-btn active" data-target="candidature">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Apply to CAMPUS
+                                            SUPERIA</span></div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="adm-card-btn" data-target="financement">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Studies Financing</span>
+                                    </div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: Sub-category Cards -->
+                        <div class="adm-column adm-col-sub">
+                            <!-- Sub-panel for Candidature -->
+                            <div class="adm-sub-panel active" id="sub-panel-candidature">
+                                <div class="dropdown-col-header">Apply to Campus Superia</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn active" data-target="rentree-septembre">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Start in
+                                                September</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="rentree-fevrier">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Start in February</span>
+                                        </div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="procedure-internationale">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                <path
+                                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">International
+                                                Procedure</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-panel for Financement -->
+                            <div class="adm-sub-panel" id="sub-panel-financement">
+                                <div class="dropdown-col-header">Studies Financing</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn" data-target="financement-options">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <line x1="12" y1="10" x2="12" y2="10"></line>
+                                                <line x1="12" y1="14" x2="12" y2="14"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Financing Options</span>
+                                        </div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 3: Direct Link Lists -->
+                        <div class="adm-column adm-col-links">
+                            <div class="adm-links-panel active" id="links-panel-rentree-septembre">
+                                <div class="dropdown-col-header">Start in September</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bts-en.html">BTS Procedure</a></li>
+                                    <li><a href="admissions-bachelor-en.html">Bachelor Procedure</a></li>
+                                    <li><a href="admissions-bba-en.html">BBA Procedure</a></li>
+                                    <li><a href="admissions-msc-en.html">Master of Science Procedure</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-rentree-fevrier">
+                                <div class="dropdown-col-header">Start in February</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bachelor-en.html?rentree=fevrier">Bachelor Procedure</a>
+                                    </li>
+                                    <li><a href="admissions-bba-en.html?rentree=fevrier">BBA Procedure</a></li>
+                                    <li><a href="admissions-msc-en.html?rentree=fevrier">Master of Science Procedure</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-procedure-internationale">
+                                <div class="dropdown-col-header">International Procedure</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-international-en.html">International Admission Bachelor</a>
+                                    </li>
+                                    <li><a href="admissions-international-en.html">International Admission BBA</a></li>
+                                    <li><a href="admissions-international-en.html">International Admission MSc</a></li>
+                                    <li><a href="admissions-international-en.html#visa">Student Visa</a></li>
+                                    <li><a href="admissions-international-en.html#visa">Student Housing</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-financement-options">
+                                <div class="dropdown-col-header">Studies Financing</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-frais-en.html">Tuition fees</a></li>
+                                    <li><a href="admissions-bourses-en.html">Scholarships</a></li>
+                                    <li><a href="admissions-bourses-en.html#cpf">Financing</a></li>
+                                    <li><a href="admissions-frais-en.html#options">Installment Plan</a></li>
+                                    <li><a href="admissions-bourses-en.html#alternance">Work-Study</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Col 4: Preview Card -->
+                        <div class="adm-column adm-col-preview">
+                            <div class="adm-preview-container">
+                                <div class="adm-preview-card active" data-preview="rentree-septembre">
+                                    <img src="./assets/adm-preview-september.png" alt="September Intake">
+                                </div>
+                                <div class="adm-preview-card" data-preview="rentree-fevrier">
+                                    <img src="./assets/adm-preview-september.png" alt="February Intake">
+                                </div>
+                                <div class="adm-preview-card" data-preview="procedure-internationale">
+                                    <img src="./assets/adm-preview-international.png" alt="International Procedure">
+                                </div>
+                                <div class="adm-preview-card" data-preview="financement-options">
+                                    <img src="./assets/adm-preview-scholarship.png" alt="Studies Financing">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="partenariats-en.html">Partnerships</a>
+                <a href="index.html" class="nav-lang" aria-label="Switch language to French">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    <span>FR</span>
+                </a>
+                <a href="#contact" class="nav-cta">Contact Us</a>
+            </nav>
+        </header>
+        
+        <section class="hero-section">
+            <div class="hero-image-wrapper hero-secondary fade-up">
+                <img src="./assets/hero.jpeg" alt="Campus Superia Team" class="hero-img"
+                     onerror="this.src='https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop'">
+                <div class="hero-overlay">
+                    <div class="hero-text-area">
+                        <span class="overline" style="color: white; margin-bottom: 0.5rem; display: block; font-weight: bold; text-transform: uppercase;">Made for you</span>
+                        <h1 class="display-title" style="font-size: 3.5rem;">Our Linguistic & Higher Ed Programmes</h1>
+                        <p class="hero-subtitle">Discover our programs designed to support you at every stage of your learning journey, from elementary language courses to state-certified degrees. We cultivate your skills for your academic and career success.</p>
+                        <div class="hero-search-gadget">
+                            <div class="gadget-select-group">
+                                <label for="gadget-program">Program</label>
+                                <div class="select-wrapper">
+                                    <select id="gadget-program">
+                                        <option value="">All programs</option>
+                                        <option value="BTS">BTS (Bac+2 Work-Study)</option>
+                                        <option value="Bachelor">Bachelor</option>
+                                        <option value="Anglais">English Track</option>
+                                        <option value="A2">Pre-intermediate - A2</option>
+                                        <option value="B1">Intermediate - B1</option>
+                                        <option value="B2">Advanced - B2</option>
+                                        <option value="C1">Autonomous - C1</option>
+                                        <option value="C2">Mastery - C2</option>
+                                    </select>
+                                    <span class="select-arrow">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="gadget-select-group">
+                                <label for="gadget-specialization">Specialization</label>
+                                <div class="select-wrapper">
+                                    <select id="gadget-specialization">
+                                        <option value="">All specializations</option>
+                                        <option value="general">General Studies</option>
+                                        <option value="business">Professional & Business Focus</option>
+                                        <option value="exam">Exam Preparation</option>
+                                        <option value="eloquence">Eloquence & Leadership</option>
+                                    </select>
+                                    <span class="select-arrow">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="gadget-select-group">
+                                <label for="gadget-campus">Campus / Format</label>
+                                <div class="select-wrapper">
+                                    <select id="gadget-campus">
+                                        <option value="">All formats</option>
+                                        <option value="paris">Paris (Neuilly)</option>
+                                        <option value="online">Online / E-Learning</option>
+                                    </select>
+                                    <span class="select-arrow">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="gadget-search-btn" id="btn-search-gadget" aria-label="Search">
+                                <span>Search</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programmes-grid-container">
+            <!-- Program Families Selector Tab Bar -->
+            <div class="program-families-tabs-container fade-up">
+                <div class="program-families-tabs">
+                    <button class="tab-btn active" data-family="all">All Programs</button>
+                    <button class="tab-btn" data-family="fle">French Pathways (FLE)</button>
+                    <button class="tab-btn" data-family="english">English Pathways</button>
+                    <button class="tab-btn" data-family="bts">BTS (Bac+2)</button>
+                    <button class="tab-btn" data-family="bachelor">Bachelor &amp; BBA</button>
+                </div>
+            </div>
+            <!-- Dynamic Filter Status Bar -->
+            <div class="filter-status-bar" id="filter-status-bar" style="display: none;">
+                <div class="filter-status-title">Active Filters:</div>
+                <div class="filter-status-tags" id="filter-status-tags"></div>
+                <button class="filter-clear-btn" id="filter-clear-btn">Clear Filters</button>
+            </div>
+
+            <div class="programmes-grid">
+
+                <div class="program-card-detail" data-family="fle" data-level="A2" data-specializations="general,exam" data-campuses="paris,online">
+                    <img src="./assets/formation-new-1.jpg" alt="Pre-intermediate Level - A2 (FLE)" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Pre-intermediate Level - A2 (FLE)</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-foundation"></span>Essential foundations with rigor and method</li>
+                            <li><span class="point-icon point-icon-expression"></span>First reliable and structured expression</li>
+                            <li><span class="point-icon point-icon-guided"></span>Simple, guided communication situations</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <a href="brochure-fle.html" target="_blank" class="btn btn-outline-brand">Brochure</a>
+                            <a href="parcours-fle.html" class="btn btn-brand-orange">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="fle" data-level="B1" data-specializations="general,business,exam" data-campuses="paris,online">
+                    <img src="./assets/formation-new-2.jpg" alt="Intermediate Level - B1 (FLE)" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Intermediate Level - B1 (FLE)</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-communication"></span>Clear and coherent communication</li>
+                            <li><span class="point-icon point-icon-growth"></span>Steady, progressive skill building</li>
+                            <li><span class="point-icon point-icon-professional"></span>Varied and professional interactions</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <a href="brochure-fle.html" target="_blank" class="btn btn-outline-brand">Brochure</a>
+                            <a href="parcours-fle.html" class="btn btn-brand-orange">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="fle" data-level="B2" data-specializations="general,business,eloquence,exam" data-campuses="paris,online">
+                    <img src="./assets/formation-new-3.jpg" alt="Advanced Level - B2 (FLE)" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Advanced Level - B2 (FLE)</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-expression"></span>Fluent and structured expression</li>
+                            <li><span class="point-icon point-icon-argument"></span>Persuasive argumentation and confidence</li>
+                            <li><span class="point-icon point-icon-demanding"></span>Integration into demanding environments</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <a href="brochure-fle.html" target="_blank" class="btn btn-outline-brand">Brochure</a>
+                            <a href="parcours-fle.html" class="btn btn-brand-orange">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="fle" data-level="C1" data-specializations="general,business,eloquence,exam" data-campuses="paris">
+                    <img src="./assets/formation-new-4.jpg" alt="Autonomous Level - C1 (FLE)" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Autonomous Level - C1 (FLE)</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-expression"></span>Precise, nuanced, and impactful expression</li>
+                            <li><span class="point-icon point-icon-complex"></span>Confidence with complex subjects</li>
+                            <li><span class="point-icon point-icon-demanding"></span>Ease in intellectually demanding contexts</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <a href="brochure-fle.html" target="_blank" class="btn btn-outline-brand">Brochure</a>
+                            <a href="parcours-fle.html" class="btn btn-brand-orange">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="fle" data-level="C2" data-specializations="general,business,eloquence" data-campuses="paris">
+                    <img src="./assets/formation-new-5.jpg" alt="Mastery Level - C2 (FLE)" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Mastery Level - C2 (FLE)</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-mastery"></span>Complete mastery with finesse and high standards</li>
+                            <li><span class="point-icon point-icon-communication"></span>Natural high-level communication</li>
+                            <li><span class="point-icon point-icon-global"></span>International and competitive environments</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <a href="brochure-fle.html" target="_blank" class="btn btn-outline-brand">Brochure</a>
+                            <a href="parcours-fle.html" class="btn btn-brand-orange">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="english" data-level="A2" data-specializations="general,exam" data-campuses="paris,online">
+                    <img src="./assets/formation-new-1.jpg" alt="Pre-Intermediate English - A2" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Pre-Intermediate English - A2</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-foundation"></span>Acquire essentials of everyday English communication</li>
+                            <li><span class="point-icon point-icon-expression"></span>Common vocabulary and key sentence structures</li>
+                            <li><span class="point-icon point-icon-guided"></span>Simple listening comprehension and guided dialogues</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="english" data-level="B1" data-specializations="general,business,exam" data-campuses="paris,online">
+                    <img src="./assets/formation-new-2.jpg" alt="Intermediate English - B1" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Intermediate English - B1</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-communication"></span>Confidence in travel and casual conversations</li>
+                            <li><span class="point-icon point-icon-growth"></span>Writing simple emails and structured texts</li>
+                            <li><span class="point-icon point-icon-professional"></span>First interactions in a professional workplace</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="english" data-level="B2" data-specializations="general,business,eloquence,exam" data-campuses="paris,online">
+                    <img src="./assets/formation-new-3.jpg" alt="Professional English - B2" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Professional English - B2</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-expression"></span>Fluent expression in meetings and negotiations</li>
+                            <li><span class="point-icon point-icon-argument"></span>Deliver business presentations and draft detailed reports</li>
+                            <li><span class="point-icon point-icon-demanding"></span>Core competencies for global enterprise contexts</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="english" data-level="C1" data-specializations="general,business,eloquence,exam" data-campuses="paris,online">
+                    <img src="./assets/formation-new-4.jpg" alt="Advanced English & IELTS / TOEFL Prep" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Advanced English & IELTS / TOEFL Prep</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-expression"></span>Mastery of advanced communication, negotiation and leadership</li>
+                            <li><span class="point-icon point-icon-complex"></span>Regular mock exams and intensive preparation modules</li>
+                            <li><span class="point-icon point-icon-demanding"></span>Target score guarantee for top universities and firms</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="bts" data-level="BTS" data-specializations="general,business" data-campuses="paris,online">
+                    <img src="./assets/formation-new-6.jpg" alt="BTS Operational Commercial Management - MCO" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>BTS Operational Commercial Management - MCO</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-professional"></span>Operational management: Stocks, budgets, indicators (KPI), and profitability</li>
+                            <li><span class="point-icon point-icon-communication"></span>Commercial team management: Recruitment, animation, and supervision</li>
+                            <li><span class="point-icon point-icon-expression"></span>Customer relations &amp; development: Store layout dynamics and marketing</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="bts" data-level="BTS" data-specializations="business,eloquence" data-campuses="paris,online">
+                    <img src="./assets/formation-new-7.jpg" alt="BTS Negotiation and Digitalization of Customer Relations - NDRC" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>BTS Negotiation and Digitalization of Customer Relations - NDRC</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-communication"></span>Customer relations &amp; negotiation: Prospecting, sales negotiation, and loyalty</li>
+                            <li><span class="point-icon point-icon-complex"></span>Omnichannel digitalization: CRM, e-commerce, social media, and social selling</li>
+                            <li><span class="point-icon point-icon-global"></span>Network animation: Managing partners, distributors, and direct sales</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="bts" data-level="BTS" data-specializations="general,business" data-campuses="paris">
+                    <img src="./assets/formation-new-8.jpg" alt="BTS Small &amp; Medium Enterprise Management - GPME" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>BTS Small &amp; Medium Enterprise Management - GPME</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-professional"></span>Administrative &amp; financial management: Accounting organization and activity pilot</li>
+                            <li><span class="point-icon point-icon-growth"></span>Human Resources (HRM): Personnel management and development support</li>
+                            <li><span class="point-icon point-icon-foundation"></span>Risk management: Prevention of operational and financial risks</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="bts" data-level="BTS" data-specializations="business,exam" data-campuses="paris,online">
+                    <img src="./assets/formation-new-9.jpg" alt="BTS International Trade - CI" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>BTS International Trade - CI</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-expression"></span>Prospecting &amp; negotiation: Market analysis and intercultural relations</li>
+                            <li><span class="point-icon point-icon-global"></span>Import-export management: Logistics, customs, and Supply Chain</li>
+                            <li><span class="point-icon point-icon-mastery"></span>Global risk management: Contract tracking, financing, and currencies</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="bachelor" data-level="Bachelor" data-specializations="general,business" data-campuses="paris,online">
+                    <img src="./assets/scroll-actual-1.jpg" alt="Bachelor in Marketing & Business Development" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Bachelor in Marketing & Business Development</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-foundation"></span>State-certified RNCP Level 6 Bachelor degree</li>
+                            <li><span class="point-icon point-icon-growth"></span>Third year fully completed in work-study (100% tuition funded)</li>
+                            <li><span class="point-icon point-icon-professional"></span>Tracks: Digital Marketing, Sales Development, Project Management</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="bachelor" data-level="Bachelor" data-specializations="business,exam" data-campuses="paris,online">
+                    <img src="./assets/scroll-actual-2.jpg" alt="BBA - Bachelor of Business Administration" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>BBA - Bachelor of Business Administration</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-global"></span>100% bilingual international business curriculum</li>
+                            <li><span class="point-icon point-icon-communication"></span>Study abroad semesters and double degree options</li>
+                            <li><span class="point-icon point-icon-complex"></span>Full professional immersion in multinational enterprises</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-card-detail" data-family="bachelor" data-level="Bachelor" data-specializations="business,exam" data-campuses="paris">
+                    <img src="./assets/scroll-actual-3.jpg" alt="Master of Science (MSc) Finance & Management" class="program-card-detail-img">
+                    <div class="program-card-detail-body">
+                        <h3>Master of Science (MSc) Finance & Management</h3>
+                        <ul class="program-points">
+                            <li><span class="point-icon point-icon-mastery"></span>High-level Bac+5 curriculum, State-certified RNCP Level 7</li>
+                            <li><span class="point-icon point-icon-demanding"></span>Active industry guest speakers from top financial institutions</li>
+                            <li><span class="point-icon point-icon-growth"></span>Access to 10,000 corporate partner slots for apprenticeship placement</li>
+                        </ul>
+                        <div class="program-card-actions">
+                            <span style="display:inline-block; padding: 0.6rem 1.2rem; border-radius: 6px; background: #fff0e6; color: #ea5b0c; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px;">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <h3 class="footer-brand">Campus Superia</h3>
+                <div class="footer-bottom-brand">
+                    <img src="./assets/logo-icon.png" alt="Campus Superia Logo" class="footer-badge-img"
+                        style="height: 30px; width: auto;">
+                    <p class="copyright">&copy; 2026, Campus Superia</p>
+                </div>
+            </div>
+
+            <!-- Col 2: Menu -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#academics">Mission</a></li>
+                    <li><a href="programmes.html">Programme</a></li>
+                    <li><a href="index.html#contact">Contactez-nous</a></li>
+                    <li><a href="reclamations.html">Réclamations & Suggestions</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Informations administratives -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Documentation</h4>
+                <ul class="footer-links">
+                    <li><a href="./assets/Livret_Accueil_Campus_Superia_v2026_1.pdf" target="_blank">Livret d’accueil</a></li>
+                    <li><a href="./assets/Reglement_interieur_Campus_Superia_v2026.pdf" target="_blank">Règlement intérieur</a></li>
+                    <li><a href="accessibilite-handicap.html">Accessibilité & Handicap</a></li>
+                    <li><a href="accessibilite-handicap.html#contact-referent">Référent Handicap</a></li>
+                    <li><a href="./assets/CGV_Campus_Superia.pdf" target="_blank">CGV</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Socials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Suivez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/campus_superia" target="_blank"
+                            rel="noopener noreferrer">Instagram ↗</a></li>
+                    <li><a href="https://www.tiktok.com/@campussuperia?_r=1&_t=ZN-96ISLCCJ6s2" target="_blank"
+                            rel="noopener noreferrer">TikTok ↗</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Contactez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@campussuperia.com">contact@campussuperia.com</a></li>
+                    <li><a href="mailto:campussuperia@gmail.com">campussuperia@gmail.com</a></li>
+                    <li><a href="tel:+33781547503">+33 781 547 503</a></li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-brand-orange-full footer-btn">Inscrivez-vous</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js?v=10"></script>
+    <script>
+        document.querySelectorAll('.hero-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.hero-nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

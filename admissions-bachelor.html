@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Admission Bachelor — Campus Superia</title>
+    <meta name="description" content="Procédure d'admission pour les programmes Bachelor de Campus Superia. Cursus Bac+3 certifié par l'État avec spécialisations multiples.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300..700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=14">
+</head>
+<body>
+<main>
+    <header class="site-header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./assets/logo-full.png" alt="Campus Superia Logo">
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu"
+                onclick="document.querySelector('.site-nav').classList.toggle('active')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="site-nav">
+                <a href="#about">À propos</a>
+                <a href="#academics">Mission</a>
+                <a href="programmes.html">Programme</a>
+                <div class="nav-dropdown-wrapper">
+                    <a href="test.html" class="dropdown-trigger">
+                        <span>Pré-évaluation</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-links-col">
+                            <div class="dropdown-item opt-analyse">
+                                <a href="analyse.html">
+                                    <span class="item-title">Analyse personnalisée de votre projet</span>
+                                    <span class="item-desc">Afin de vous accompagner dans le choix de votre formation,
+                                        complétez ce court questionnaire pour orienter notre équipe.</span>
+                                </a>
+                            </div>
+                            <div class="dropdown-item opt-test">
+                                <a href="test.html">
+                                    <span class="item-title">Pré-évaluation</span>
+                                    <span class="item-desc">CAMPUS SUPERIA vous propose un test de positionnement en
+                                        français afin d’évaluer votre niveau actuel, d’identifier vos besoins et de vous
+                                        orienter.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-preview-col">
+                            <div class="preview-img-container">
+                                <img src="./assets/hero.jpeg" class="preview-img img-default" alt="Campus Default">
+                                <img src="./assets/scroll-actual-2.jpg" class="preview-img img-analyse"
+                                    alt="Project Analysis">
+                                <img src="./assets/scroll-actual-1.jpg" class="preview-img img-test"
+                                    alt="French Placement Test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admissions Mega-Menu -->
+                <div class="nav-dropdown-wrapper">
+                    <a href="admissions.html" class="dropdown-trigger">
+                        <span>Admissions</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown admissions-mega">
+                        <!-- Col 1: Main Category Cards -->
+                        <div class="adm-column adm-col-main">
+                            <div class="dropdown-col-header">Intégrer Campus Supéria</div>
+                            <div class="adm-cards-container">
+                                <div class="adm-card-btn active" data-target="candidature">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Déposer ma
+                                            candidature</span></div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="adm-card-btn" data-target="financement">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Financer ma formation</span>
+                                    </div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: Sub-category Cards -->
+                        <div class="adm-column adm-col-sub">
+                            <!-- Sub-panel for Candidature -->
+                            <div class="adm-sub-panel active" id="sub-panel-candidature">
+                                <div class="dropdown-col-header">Choisir sa rentrée</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn active" data-target="rentree-septembre">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Rentrée de
+                                                septembre</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="rentree-fevrier">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Rentrée de
+                                                février</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="procedure-internationale">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                <path
+                                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Candidats
+                                                internationaux</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-panel for Financement -->
+                            <div class="adm-sub-panel" id="sub-panel-financement">
+                                <div class="dropdown-col-header">Le financement des études</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn" data-target="financement-options">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <line x1="12" y1="10" x2="12" y2="10"></line>
+                                                <line x1="12" y1="14" x2="12" y2="14"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Options de
+                                                financement</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 3: Direct Link Lists -->
+                        <div class="adm-column adm-col-links">
+                            <div class="adm-links-panel active" id="links-panel-rentree-septembre">
+                                <div class="dropdown-col-header">Procédures par programme</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bts.html">Admission BTS</a></li>
+                                    <li><a href="admissions-bachelor.html">Admission Bachelor</a></li>
+                                    <li><a href="admissions-bba.html">Admission BBA</a></li>
+                                    <li><a href="admissions-msc.html">Admission MSc</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-rentree-fevrier">
+                                <div class="dropdown-col-header">Faire sa rentrée en Février</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bachelor.html?rentree=fevrier">Admission Bachelor</a></li>
+                                    <li><a href="admissions-bba.html?rentree=fevrier">Admission BBA</a></li>
+                                    <li><a href="admissions-msc.html?rentree=fevrier">Admission MSc</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-procedure-internationale">
+                                <div class="dropdown-col-header">Procédure Internationale</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-international.html">Admission Internationale Bachelor</a>
+                                    </li>
+                                    <li><a href="admissions-international.html">Admission Internationale BBA</a></li>
+                                    <li><a href="admissions-international.html">Admission Internationale MSc</a></li>
+                                    <li><a href="admissions-international.html#visa">Visa Étudiant</a></li>
+                                    <li><a href="admissions-international.html#visa">Logement Étudiant</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-financement-options">
+                                <div class="dropdown-col-header">Le financement des études</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-frais.html">Frais de scolarité</a></li>
+                                    <li><a href="admissions-bourses.html">Bourses</a></li>
+                                    <li><a href="admissions-bourses.html#cpf">Financement</a></li>
+                                    <li><a href="admissions-frais.html#options">Paiement échelonné</a></li>
+                                    <li><a href="admissions-bourses.html#alternance">Alternance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Col 4: Preview Card -->
+                        <div class="adm-column adm-col-preview">
+                            <div class="adm-preview-container">
+                                <div class="adm-preview-card active" data-preview="rentree-septembre">
+                                    <img src="./assets/adm-preview-september.png" alt="Rentrée de Septembre">
+                                </div>
+                                <div class="adm-preview-card" data-preview="rentree-fevrier">
+                                    <img src="./assets/adm-preview-september.png" alt="Rentrée de Février">
+                                </div>
+                                <div class="adm-preview-card" data-preview="procedure-internationale">
+                                    <img src="./assets/adm-preview-international.png" alt="Procédure Internationale">
+                                </div>
+                                <div class="adm-preview-card" data-preview="financement-options">
+                                    <img src="./assets/adm-preview-scholarship.png" alt="Le financement des études">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="partenariats.html">Partenariats</a>
+                <a href="index-en.html" class="nav-lang" aria-label="Switch language to English">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    <span>EN</span>
+                </a>
+                <a href="#contact" class="nav-cta">Contactez-nous</a>
+            </nav>
+        </header>
+
+    <section class="hero-section">
+        <div class="hero-image-wrapper hero-secondary fade-up">
+            <img src="./assets/scroll-actual-1.jpg" alt="Admission Bachelor" class="hero-img">
+            <div class="hero-overlay">
+                <div class="hero-layout">
+                    <div class="hero-text-area">
+                        <span class="tag" style="color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.25);margin-bottom:1.5rem;"><span class="dot" style="background:#fca33d;"></span> Campus Superia</span>
+                        <h1 class="display-title">Admission<br>Bachelor (Bac+3)</h1>
+                        <p class="hero-subtitle">Cursus Bac+3 certifié par l'État. Construisez votre avenir professionnel avec nos spécialisations et l'alternance.</p>
+                        <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;">
+                            <a href="#contact" class="btn btn-brand-orange" style="border-radius:4px;">Candidater maintenant →</a>
+                            <a href="admissions.html" class="btn btn-outline-light" style="border-radius:4px;">Vue d&apos;ensemble</a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="page-breadcrumb"><a href="index.html">Accueil</a><span class="bc-sep">/</span> <a href="admissions.html">Admissions</a><span class="bc-sep">/</span> <span class="bc-current">Bachelor</span></nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="requirements-section">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-up">
+                <span class="tag"><span class="dot"></span> Points Clés</span>
+                <h2 class="section-title">Pourquoi choisir le Bachelor ?</h2>
+                <p class="section-subtitle" style="margin:.75rem auto 0;">Un diplôme professionnalisant et ouvert sur l'international, combinant socle académique et immersion professionnelle.</p>
+            </div>
+            <div class="requirements-grid">
+                <div class="req-card fade-up" style="--delay:0.1s">
+                    <div class="req-card-header"><div class="req-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3>Reconnaissance RNCP</h3></div>
+                    <ul class="req-list">
+                        <li>Titre certifié par l'État de Niveau 6</li>
+                        <li>Cursus structuré en 3 ans (post-bac, post-bac+1 ou post-bac+2)</li>
+                        <li>Crédits ECTS délivrés pour poursuite d'études ou mobilité internationale</li>
+                    </ul>
+                </div>
+                <div class="req-card fade-up" style="--delay:0.2s">
+                    <div class="req-card-header"><div class="req-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div><h3>Alternance en 3ème année</h3></div>
+                    <ul class="req-list">
+                        <li>Deux premières années sous statut d'étudiant pour acquérir les bases</li>
+                        <li>Troisième année en alternance pour une insertion professionnelle rapide</li>
+                        <li>Prise en charge financière totale des frais en 3ème année</li>
+                    </ul>
+                </div>
+                <div class="req-card fade-up" style="--delay:0.3s">
+                    <div class="req-card-header"><div class="req-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Domaines Spécialisés</h3></div>
+                    <ul class="req-list">
+                        <li>Filières ciblées : Marketing, Communication, Business Development, Management</li>
+                        <li>Enseignement pratique axé sur les besoins réels des entreprises</li>
+                        <li>Projets réels et challenges par équipe</li>
+                    </ul>
+                </div>
+                <div class="req-card fade-up" style="--delay:0.4s">
+                    <div class="req-card-header"><div class="req-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><h3>Excellent Taux d'Insertion</h3></div>
+                    <ul class="req-list">
+                        <li>90% des diplômés en poste dans les 6 mois après le diplôme</li>
+                        <li>Réseau d'alumni actif et partenariats corporatifs solides</li>
+                        <li>Suivi de carrière individualisé pour chaque étudiant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="admission-steps-section">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <span class="tag"><span class="dot"></span> Procédure</span>
+                <h2 class="section-title">Les 4 étapes de l'admission Bachelor</h2>
+            </div>
+            <div class="admission-steps-grid">
+                <div class="step-card fade-up" style="--delay:0.1s"><div class="step-num">1</div><h3>Dossier en ligne</h3><p>Soumettez vos bulletins scolaires, CV, lettre de motivation et pièces justificatives via notre portail en ligne.</p></div>
+                <div class="step-card fade-up" style="--delay:0.2s"><div class="step-num">2</div><h3>Examen du jury</h3><p>Notre jury académique étudie votre dossier scolaire, votre comportement et votre parcours personnel.</p></div>
+                <div class="step-card fade-up" style="--delay:0.3s"><div class="step-num">3</div><h3>Évaluations</h3><p>Réalisez un court test écrit (anglais et culture générale) suivi d'un entretien oral de motivation de 20 minutes.</p></div>
+                <div class="step-card fade-up" style="--delay:0.4s"><div class="step-num">4</div><h3>Résultats</h3><p>La décision finale d'admissibilité ou d'admission vous est envoyée sous 5 jours ouvrés.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section section-padding" style="width:100%; background:var(--clr-white);">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-up">
+                <h2 class="section-title">Questions fréquentes sur le Bachelor</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">Puis-je intégrer le Bachelor directement en 2ème ou 3ème année ?<span class="faq-icon"></span></button>
+                    <div class="faq-answer"><div class="faq-answer-content">Oui. Nous acceptons les admissions parallèles : entrée en 2ème année après une année validée de licence/classe prépa, ou entrée en 3ème année après un Bac+2 validé (BTS, DUT, ou 120 crédits ECTS équivalents).</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Comment fonctionne le rythme de l'alternance en 3ème année ?<span class="faq-icon"></span></button>
+                    <div class="faq-answer"><div class="faq-answer-content">Le rythme est généralement d'une semaine de cours par mois ou de quelques jours par semaine en cours et le reste en entreprise, permettant une intégration complète en milieu professionnel.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-banner-grid">
+                <div class="stat-item fade-up"><span class="stat-number">90%</span><span class="stat-label">Insertion pro sous 6 mois</span></div>
+                <div class="stat-item fade-up" style="--delay:.1s"><span class="stat-number">3 ans</span><span class="stat-label">Durée totale cursus</span></div>
+                <div class="stat-item fade-up" style="--delay:.2s"><span class="stat-number">5 jours</span><span class="stat-label">Délai résultats d'admission</span></div>
+                <div class="stat-item fade-up" style="--delay:.3s"><span class="stat-number">RNCP 6</span><span class="stat-label">Titre certifié d'État</span></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="form-section card-variant">
+        <div class="form-section-header fade-up">
+            <div class="header-left"><h2>Prêt à nous<br>rejoindre ?</h2></div>
+            <div class="header-right">
+                <p>Déposez votre candidature maintenant. Notre équipe vous recontactera sous 72 heures.</p>
+                <div class="header-actions">
+                    <a href="#contact" class="btn btn-brand-orange">Candidater ↗</a>
+                    <a href="tel:+33781547503" class="btn btn-outline-light">+33 781 547 503</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-container fade-up">
+            <div class="form-card">
+                <div class="form-card-left"><h3>Votre demande en 3 étapes</h3><p>Simple, rapide et sans engagement. Votre conseiller dédié prendra le relais sous 72h.</p><div class="card-features"><span class="feature-tag">Gratuit</span><span class="feature-tag">Rapide</span><span class="feature-tag">Dédié</span></div></div>
+                <div class="form-card-right">
+                    <form action="#" class="campus-form-card" id="multi-step-form">
+                        <div class="form-progress"><span class="progress-text">Étape <span id="current-step">1</span> sur 3</span><div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-fill"></div></div></div>
+                        <div class="form-step form-step-active" data-step="1">
+                            <div class="form-group">
+                                <label for="nom">Nom <span class="text-brand-orange">*</span></label>
+                                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">Prénom <span class="text-brand-orange">*</span></label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="naissance">Date de naissance <span class="text-brand-orange">*</span></label>
+                                <input type="date" id="naissance" name="naissance" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="text-brand-orange">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone <span class="text-brand-orange">*</span></label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="+33 6 XX XX XX XX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ville">Ville de résidence <span class="text-brand-orange">*</span></label>
+                                <input type="text" id="ville" name="ville" placeholder="Ex: Paris, Lyon..." required>
+                            </div>
+                            <div class="form-actions form-actions-right">
+                                <button type="button" class="btn btn-brand-orange-full btn-next">Suivant</button>
+                            </div>
+                        </div>
+                        <div class="form-step" data-step="2">
+                            <div class="form-group">
+                                <label for="formation_souhaitee">Formation souhaitée <span class="text-brand-orange">*</span></label>
+                                <select id="formation_souhaitee" name="formation_souhaitee" required>
+                                    <option value="" disabled selected>Sélectionnez une formation</option>
+                                    <option value="BTS">BTS</option>
+                                    <option value="Bachelor">Bachelor</option>
+                                    <option value="Master">Master</option>
+                                    <option value="Formation professionnelle">Formation professionnelle</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="formation_visee">Intitulé de la formation visée <span class="text-brand-orange">*</span></label>
+                                <input type="text" id="formation_visee" name="formation_visee" placeholder="Ex: BTS MCO, Bachelor Marketing..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="niveau_actuel">Niveau d'études actuel (Dernier diplôme / en cours) <span class="text-brand-orange">*</span></label>
+                                <input type="text" id="niveau_actuel" name="niveau_actuel" placeholder="Ex: Baccalauréat, Licence..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="situation_actuelle">Situation actuelle <span class="text-brand-orange">*</span></label>
+                                <select id="situation_actuelle" name="situation_actuelle" required>
+                                    <option value="" disabled selected>Sélectionnez votre situation</option>
+                                    <option value="Étudiant">Étudiant</option>
+                                    <option value="Salarié">Salarié</option>
+                                    <option value="Demandeur d'emploi">Demandeur d'emploi</option>
+                                    <option value="En reconversion">En reconversion</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline-dark btn-prev">Précédent</button>
+                                <button type="button" class="btn btn-brand-orange-full btn-next">Suivant</button>
+                            </div>
+                        </div>
+                        <div class="form-step" data-step="3">
+                            <div class="form-group">
+                                <label for="rythme_souhaite">Rythme souhaité <span class="text-brand-orange">*</span></label>
+                                <select id="rythme_souhaite" name="rythme_souhaite" required>
+                                    <option value="" disabled selected>Sélectionnez le rythme</option>
+                                    <option value="Initial">Initial</option>
+                                    <option value="Alternance">Alternance</option>
+                                    <option value="Formation continue">Formation continue</option>
+                                    <option value="À distance / Hybride">À distance / Hybride</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="motivation">Motivation du candidat <span class="text-brand-orange">*</span></label>
+                                <textarea id="motivation" name="motivation" placeholder="Décrivez brièvement votre projet et vos objectifs..." rows="4" required></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="rgpd" name="rgpd" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">J'accepte la collecte de mes données par Campus Superia. <a href="#">[Politique de confidentialité]</a> <span class="text-brand-orange">*</span></span>
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline-dark btn-prev">Précédent</button>
+                                <button type="submit" class="btn btn-brand-orange-full">Envoyer ma demande</button>
+                            </div>
+                        </div>
+                    </form>                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <h3 class="footer-brand">Campus Superia</h3>
+                <div class="footer-bottom-brand">
+                    <img src="./assets/logo-icon.png" alt="Campus Superia Logo" class="footer-badge-img"
+                        style="height: 30px; width: auto;">
+                    <p class="copyright">&copy; 2026, Campus Superia</p>
+                </div>
+            </div>
+
+            <!-- Col 2: Menu -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#academics">Mission</a></li>
+                    <li><a href="programmes.html">Programme</a></li>
+                    <li><a href="index.html#contact">Contactez-nous</a></li>
+                    <li><a href="reclamations.html">Réclamations & Suggestions</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Informations administratives -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Documentation</h4>
+                <ul class="footer-links">
+                    <li><a href="./assets/Livret_Accueil_Campus_Superia_v2026_1.pdf" target="_blank">Livret d’accueil</a></li>
+                    <li><a href="./assets/Reglement_interieur_Campus_Superia_v2026.pdf" target="_blank">Règlement intérieur</a></li>
+                    <li><a href="accessibilite-handicap.html">Accessibilité & Handicap</a></li>
+                    <li><a href="accessibilite-handicap.html#contact-referent">Référent Handicap</a></li>
+                    <li><a href="./assets/CGV_Campus_Superia.pdf" target="_blank">CGV</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Socials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Suivez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/campus_superia" target="_blank"
+                            rel="noopener noreferrer">Instagram ↗</a></li>
+                    <li><a href="https://www.tiktok.com/@campussuperia?_r=1&_t=ZN-96ISLCCJ6s2" target="_blank"
+                            rel="noopener noreferrer">TikTok ↗</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Contactez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@campussuperia.com">contact@campussuperia.com</a></li>
+                    <li><a href="mailto:campussuperia@gmail.com">campussuperia@gmail.com</a></li>
+                    <li><a href="tel:+33781547503">+33 781 547 503</a></li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-brand-orange-full footer-btn">Inscrivez-vous</a>
+            </div>
+        </div>
+    </footer>
+<script src="script.js?v=10"></script>
+<script>document.querySelectorAll('.site-nav a').forEach(l=>l.addEventListener('click',()=>{const n=document.querySelector('.site-nav');if(n)n.classList.remove('active');}))</script>
+</body>
+</html>

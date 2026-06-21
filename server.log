@@ -1,0 +1,317 @@
+::1 - - [15/May/2026 17:35:23] "GET / HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:23] "GET /assets/logo-icon.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:23] "GET /assets/hero.jpeg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:23] "GET /style.css?v=7 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:24] "GET /assets/scroll-actual-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:24] "GET /assets/formation-new-5.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:24] "GET /assets/formation-new-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:24] "GET /assets/formation-new-4.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:24] "GET /assets/formation-new-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:24] "GET /assets/formation-new-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:24] "GET /script.js?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:24] "GET /assets/form-bg.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:27] code 404, message File not found
+::1 - - [15/May/2026 17:35:27] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [15/May/2026 17:35:30] "GET / HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /style.css?v=7 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/hero.jpeg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/formation-new-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/logo-icon.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/scroll-actual-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/formation-new-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /script.js?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/formation-new-4.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/formation-new-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/formation-new-5.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] "GET /assets/form-bg.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:30] code 404, message File not found
+::1 - - [15/May/2026 17:35:30] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [15/May/2026 17:35:56] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:35:57] "GET /assets/scroll-actual-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:46:30] "GET /index-en.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:46:30] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:46:30] "GET /assets/scroll1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:46:35] "GET /index.html?t=12345 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:46:47] "GET /index.html?t=12345 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:46:54] "GET /index-en.html?t=12345 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:46:54] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:47:11] "GET /index-en.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:47:11] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:47:15] "GET /index-en.html?t=12345 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/logo-icon.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/hero.jpeg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/scroll1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/formation-new-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/formation-new-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /script.js?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/formation-new-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/formation-new-4.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/formation-new-5.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:15] "GET /assets/form-bg.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:47:17] code 404, message File not found
+::1 - - [15/May/2026 17:47:17] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [15/May/2026 17:47:27] "GET /index.html?t=123456 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:48:27] "GET /index.html?bust_cache=1 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:49:06] "GET /index.html?bust_cache=1 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:49:21] "GET /index-en.html?t=12345 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:49:22] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:49:51] "GET /index-en.html?t=12345 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:49:51] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:51:28] "GET /index-en.html?t=12345 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:51:28] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:55:08] "GET /index-en.html?t=12345 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:55:08] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:56:16] "GET /index-en.html?t=12345 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:56:16] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:57:05] "GET /index-en.html?t=12345 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:57:05] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:58:08] "GET /index-en.html?t=12345 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:58:08] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 17:59:57] "GET /index-en.html?t=12345 HTTP/1.1" 304 -
+::1 - - [15/May/2026 17:59:57] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:00:13] "GET /assets/scroll-actual-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:00:39] "GET /index-en.html?t=12345 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:00:39] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:00:43] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:00:43] "GET /assets/scroll-actual-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:00:54] "GET /index-en.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:00:54] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:02:09] "GET /index-en.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:02:09] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:02:09] "GET /assets/logo-full.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:03:28] "GET /index-en.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:03:29] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:03:29] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:05:37] "GET /index-en.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:05:37] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:05:37] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:07:16] "GET /index-en.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:07:16] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:07:16] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:16:11] "GET /index-en.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:16:11] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:16:11] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:17:43] "GET /programmes.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:17:43] "GET /assets/logo-full.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:18:26] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:18:37] "GET /index-en.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:18:37] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:18:37] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:18:39] "GET /programmes-en.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:21:50] "GET /programmes-en.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:21:51] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:21:51] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:21:57] "GET /index-en.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:21:57] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:21:59] "GET /programmes-en.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:22:05] "GET /programmes.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:22:06] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:22:06] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:23:05] "GET /programmes.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:23:05] "GET /style.css?v=7 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:23:09] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:29:36] "GET /programmes.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:29:36] "GET /style.css?v=7 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:29:36] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:29:40] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:30:59] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:30:59] "GET /style.css?v=7 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:31:01] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:31:01] "GET /test.css?v=1 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:31:01] "GET /test.js?v=1 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:31:01] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:31:45] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:31:45] "GET /test.css?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:31:45] "GET /test.js?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:31:50] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:31:50] "GET /test.css?v=1 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:31:50] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:31:50] "GET /test.js?v=1 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:31:50] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:36:10] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:36:11] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:36:25] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:36:25] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:36:25] "GET /test.css?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:36:25] "GET /test.js?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:36:25] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:39:46] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:39:47] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:39:47] "GET /test.js?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:39:47] "GET /test.css?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:40:04] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:40:04] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:40:24] "GET /index.html?t=123456 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:40:24] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:40:35] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:40:35] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:40:35] "GET /test.css?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:40:35] "GET /test.js?v=1 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:42:07] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:42:07] "GET /style.css?v=7 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:42:19] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:42:19] "GET /test.css?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:42:19] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:42:19] "GET /test.js?v=1 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:43:06] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:43:06] "GET /test.js?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:44:46] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:44:47] "GET /style.css?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:44:47] "GET /test.css?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:44:47] "GET /test.js?v=1 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:44:47] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:44:52] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:46:52] "GET /assets/scroll-actual-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:47:55] "GET / HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:47:55] "GET /style.css?v=9 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:47:55] "GET /assets/logo-full.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:47:55] "GET /assets/hero.jpeg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:47:56] "GET /assets/scroll-actual-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:47:56] "GET /assets/logo-icon.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:47:56] "GET /script.js?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:47:56] "GET /assets/form-bg.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:01] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:02] "GET /assets/scroll-actual-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:09] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:09] "GET /script.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:09] "GET /test.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:09] "GET /test.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:17] "GET /programmes.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:17] "GET /assets/formation-new-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:17] "GET /assets/formation-new-4.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:17] "GET /assets/formation-new-5.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:17] "GET /assets/formation-new-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:17] "GET /assets/formation-new-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:48:34] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:50:18] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:18] "GET /test.css?v=3 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:18] "GET /style.css?v=9 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:50:18] "GET /test.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:50:18] "GET /script.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:50:35] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:35] "GET /test.css?v=3 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:35] "GET /style.css?v=9 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:35] "GET /assets/hero.jpeg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:35] "GET /assets/logo-full.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:35] "GET /test.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:35] "GET /script.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:50:35] "GET /assets/logo-icon.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:52:29] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:52:29] "GET /test.css?v=4 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:52:29] "GET /style.css?v=9 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:52:29] "GET /test.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:52:29] "GET /script.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:54:58] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:54:59] "GET /assets/scroll-actual-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:54:59] "GET /style.css?v=9 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:54:59] "GET /script.js?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:54:59] "GET /assets/form-bg.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:55:14] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:55:14] "GET /assets/scroll-actual-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:55:31] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:55:34] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:55:35] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:55:35] "GET /test.css?v=5 HTTP/1.1" 200 -
+::1 - - [15/May/2026 18:55:35] "GET /script.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:55:35] "GET /test.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:55:51] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:55:51] "GET /test.css?v=5 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:57:29] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:57:29] "GET /script.js?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:57:29] "GET /style.css?v=9 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:58:00] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:58:01] "GET /test.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:58:01] "GET /script.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:58:01] "GET /test.css?v=5 HTTP/1.1" 304 -
+::1 - - [15/May/2026 18:58:58] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 19:08:11] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 19:08:11] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 19:08:11] "GET /test.css?v=5 HTTP/1.1" 304 -
+::1 - - [15/May/2026 19:08:11] "GET /style.css?v=9 HTTP/1.1" 304 -
+::1 - - [15/May/2026 19:08:11] "GET /test.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 19:08:11] "GET /script.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 20:35:28] code 404, message File not found
+::1 - - [15/May/2026 20:35:28] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [15/May/2026 20:35:49] "GET / HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:35:49] "GET /style.css?v=9 HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:35:49] "GET /assets/hero.jpeg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:35:49] "GET /assets/logo-full.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:35:49] "GET /assets/scroll-actual-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:35:49] "GET /script.js?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:35:49] "GET /assets/logo-icon.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:35:50] "GET /assets/form-bg.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:35:59] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:00] "GET /assets/scroll-actual-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:16] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 49267, 0, 0)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 660, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 667, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 867, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+::1 - - [15/May/2026 20:36:19] "GET /index-en.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:20] "GET /assets/scroll1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:20] "GET /style.css?v=8 HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:26] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:31] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:31] "GET /test.css?v=5 HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:31] "GET /script.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:36:31] "GET /test.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:40:53] "GET /assets/scroll-actual-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:41:31] "GET /programmes-en.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:41:31] "GET /assets/formation-new-2.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:41:31] "GET /assets/formation-new-1.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:41:31] "GET /assets/formation-new-5.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:41:31] "GET /assets/formation-new-3.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 20:41:31] "GET /assets/formation-new-4.jpg HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:21:57] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:21:57] "GET /style.css?v=9 HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:21:57] "GET /assets/logo-full.png HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:21:57] "GET /script.js?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:25:14] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:25:14] "GET /script.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:25:14] "GET /test.css?v=5 HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:25:14] "GET /test.js?v=2 HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:27:29] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:28:37] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:28:37] "GET /style.css?v=9 HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:28:37] "GET /test.css?v=5 HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:28:37] "GET /script.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:28:37] "GET /test.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:28:37] "GET /assets/logo-full.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:28:37] "GET /assets/hero.jpeg HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:28:37] "GET /assets/logo-icon.png HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:37:47] "GET /programmes.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:39:59] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:39:59] "GET /script.js?v=8 HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:39:59] "GET /style.css?v=9 HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:40:52] "GET /test.html HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:40:53] "GET /test.css?v=5 HTTP/1.1" 304 -
+::1 - - [15/May/2026 21:46:09] code 404, message File not found
+::1 - - [15/May/2026 21:46:09] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [15/May/2026 21:46:12] "GET /test.html HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:46:12] "GET /style.css?v=9 HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:46:12] "GET /test.css?v=5 HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:46:12] "GET /script.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:46:12] "GET /test.js?v=2 HTTP/1.1" 200 -
+::1 - - [15/May/2026 21:46:12] "GET /assets/logo-full.png HTTP/1.1" 304 -

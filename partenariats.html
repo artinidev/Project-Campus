@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Devenir Partenaire — Campus Superia</title>
+    <meta name="description" content="Découvrez les opportunités de partenariat avec Campus Superia. Recrutez nos talents, co-construisez nos formations et développez l'innovation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300..700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=14">
+</head>
+<body>
+<main>
+    <header class="site-header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./assets/logo-full.png" alt="Campus Superia Logo">
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu"
+                onclick="document.querySelector('.site-nav').classList.toggle('active')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="site-nav">
+                <a href="#about">À propos</a>
+                <a href="#academics">Mission</a>
+                <a href="programmes.html">Programme</a>
+                <div class="nav-dropdown-wrapper">
+                    <a href="test.html" class="dropdown-trigger">
+                        <span>Pré-évaluation</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-links-col">
+                            <div class="dropdown-item opt-analyse">
+                                <a href="analyse.html">
+                                    <span class="item-title">Analyse personnalisée de votre projet</span>
+                                    <span class="item-desc">Afin de vous accompagner dans le choix de votre formation,
+                                        complétez ce court questionnaire pour orienter notre équipe.</span>
+                                </a>
+                            </div>
+                            <div class="dropdown-item opt-test">
+                                <a href="test.html">
+                                    <span class="item-title">Pré-évaluation</span>
+                                    <span class="item-desc">CAMPUS SUPERIA vous propose un test de positionnement en
+                                        français afin d’évaluer votre niveau actuel, d’identifier vos besoins et de vous
+                                        orienter.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-preview-col">
+                            <div class="preview-img-container">
+                                <img src="./assets/hero.jpeg" class="preview-img img-default" alt="Campus Default">
+                                <img src="./assets/scroll-actual-2.jpg" class="preview-img img-analyse"
+                                    alt="Project Analysis">
+                                <img src="./assets/scroll-actual-1.jpg" class="preview-img img-test"
+                                    alt="French Placement Test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admissions Mega-Menu -->
+                <div class="nav-dropdown-wrapper">
+                    <a href="admissions.html" class="dropdown-trigger">
+                        <span>Admissions</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown admissions-mega">
+                        <!-- Col 1: Main Category Cards -->
+                        <div class="adm-column adm-col-main">
+                            <div class="dropdown-col-header">Intégrer Campus Supéria</div>
+                            <div class="adm-cards-container">
+                                <div class="adm-card-btn active" data-target="candidature">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Déposer ma
+                                            candidature</span></div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="adm-card-btn" data-target="financement">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Financer ma formation</span>
+                                    </div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: Sub-category Cards -->
+                        <div class="adm-column adm-col-sub">
+                            <!-- Sub-panel for Candidature -->
+                            <div class="adm-sub-panel active" id="sub-panel-candidature">
+                                <div class="dropdown-col-header">Choisir sa rentrée</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn active" data-target="rentree-septembre">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Rentrée de
+                                                septembre</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="rentree-fevrier">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Rentrée de
+                                                février</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="procedure-internationale">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                <path
+                                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Candidats
+                                                internationaux</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-panel for Financement -->
+                            <div class="adm-sub-panel" id="sub-panel-financement">
+                                <div class="dropdown-col-header">Le financement des études</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn" data-target="financement-options">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <line x1="12" y1="10" x2="12" y2="10"></line>
+                                                <line x1="12" y1="14" x2="12" y2="14"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Options de
+                                                financement</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 3: Direct Link Lists -->
+                        <div class="adm-column adm-col-links">
+                            <div class="adm-links-panel active" id="links-panel-rentree-septembre">
+                                <div class="dropdown-col-header">Procédures par programme</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bts.html">Admission BTS</a></li>
+                                    <li><a href="admissions-bachelor.html">Admission Bachelor</a></li>
+                                    <li><a href="admissions-bba.html">Admission BBA</a></li>
+                                    <li><a href="admissions-msc.html">Admission MSc</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-rentree-fevrier">
+                                <div class="dropdown-col-header">Faire sa rentrée en Février</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bachelor.html?rentree=fevrier">Admission Bachelor</a></li>
+                                    <li><a href="admissions-bba.html?rentree=fevrier">Admission BBA</a></li>
+                                    <li><a href="admissions-msc.html?rentree=fevrier">Admission MSc</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-procedure-internationale">
+                                <div class="dropdown-col-header">Procédure Internationale</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-international.html">Admission Internationale Bachelor</a>
+                                    </li>
+                                    <li><a href="admissions-international.html">Admission Internationale BBA</a></li>
+                                    <li><a href="admissions-international.html">Admission Internationale MSc</a></li>
+                                    <li><a href="admissions-international.html#visa">Visa Étudiant</a></li>
+                                    <li><a href="admissions-international.html#visa">Logement Étudiant</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-financement-options">
+                                <div class="dropdown-col-header">Le financement des études</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-frais.html">Frais de scolarité</a></li>
+                                    <li><a href="admissions-bourses.html">Bourses</a></li>
+                                    <li><a href="admissions-bourses.html#cpf">Financement</a></li>
+                                    <li><a href="admissions-frais.html#options">Paiement échelonné</a></li>
+                                    <li><a href="admissions-bourses.html#alternance">Alternance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Col 4: Preview Card -->
+                        <div class="adm-column adm-col-preview">
+                            <div class="adm-preview-container">
+                                <div class="adm-preview-card active" data-preview="rentree-septembre">
+                                    <img src="./assets/adm-preview-september.png" alt="Rentrée de Septembre">
+                                </div>
+                                <div class="adm-preview-card" data-preview="rentree-fevrier">
+                                    <img src="./assets/adm-preview-september.png" alt="Rentrée de Février">
+                                </div>
+                                <div class="adm-preview-card" data-preview="procedure-internationale">
+                                    <img src="./assets/adm-preview-international.png" alt="Procédure Internationale">
+                                </div>
+                                <div class="adm-preview-card" data-preview="financement-options">
+                                    <img src="./assets/adm-preview-scholarship.png" alt="Le financement des études">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="partenariats.html">Partenariats</a>
+                <a href="index-en.html" class="nav-lang" aria-label="Switch language to English">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    <span>EN</span>
+                </a>
+                <a href="#contact" class="nav-cta">Contactez-nous</a>
+            </nav>
+        </header>
+
+    <section class="hero-section">
+        <div class="hero-image-wrapper hero-secondary fade-up">
+            <img src="./assets/scroll-actual-3.jpg" alt="Devenir Partenaire" class="hero-img">
+            <div class="hero-overlay">
+                <div class="hero-layout">
+                    <div class="hero-text-area">
+                        <span class="tag" style="color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.25);margin-bottom:1.5rem;"><span class="dot" style="background:#fca33d;"></span> Campus Superia</span>
+                        <h1 class="display-title">Construisons l’avenir<br>ensemble</h1>
+                        <p class="hero-subtitle">Rejoignez le réseau de partenaires de Campus Superia et collaborez avec une institution engagée pour former les leaders de demain.</p>
+                        <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;">
+                            <a href="#contact" class="btn btn-brand-orange" style="border-radius:4px;">Devenir partenaire →</a>
+                            <a href="mailto:contact@campussuperia.com" class="btn btn-outline-light" style="border-radius:4px;">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="page-breadcrumb"><a href="index.html">Accueil</a><span class="bc-sep">/</span> <span class="bc-current">Partenariats</span></nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why become a partner -->
+    <section class="why-partner-section section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-up">
+                <span class="tag"><span class="dot"></span> Pourquoi collaborer</span>
+                <h2 class="section-title">Pourquoi devenir partenaire ?</h2>
+                <p class="section-subtitle" style="margin:.75rem auto 0; max-width:600px;">Associez votre organisation à Campus Superia pour dynamiser vos projets, recruter des profils d'excellence et impacter l'éducation de demain.</p>
+            </div>
+            <div class="why-partner-grid">
+                <div class="why-card fade-up" style="--delay: 0.1s">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                    </div>
+                    <h3>Recruter nos talents</h3>
+                    <p>Accédez en priorité à nos étudiants qualifiés en recherche de stages, d'alternance ou de premier emploi.</p>
+                </div>
+                <div class="why-card fade-up" style="--delay: 0.2s">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                    </div>
+                    <h3>Co-construire les formations</h3>
+                    <p>Participez à la mise à jour de nos programmes pédagogiques pour les adapter directement à vos besoins terrain.</p>
+                </div>
+                <div class="why-card fade-up" style="--delay: 0.3s">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10a6 6 0 0 0-12 0c0 7 3 9 3 9h6s3-2 3-9"></path><line x1="12" y1="22" x2="12" y2="23"></line><path d="M9 22h6"></path></svg>
+                    </div>
+                    <h3>Développer l’innovation</h3>
+                    <p>Collaborez sur des hackathons, des projets d'étudiants ou de la recherche appliquée pour relever vos défis complexes.</p>
+                </div>
+                <div class="why-card fade-up" style="--delay: 0.4s">
+                    <div class="why-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <h3>Valoriser votre marque</h3>
+                    <p>Renforcez votre marque employeur et associez votre image à un pôle académique moderne et innovant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership categories -->
+    <section class="partner-categories-section section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-up">
+                <span class="tag"><span class="dot"></span> Profils concernés</span>
+                <h2 class="section-title">Catégories de partenariat</h2>
+                <p class="section-subtitle" style="margin:.75rem auto 0; max-width:600px;">Des formats de collaboration adaptés au profil et aux objectifs de votre organisation.</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card fade-up" style="--delay: 0.1s">
+                    <h3>Entreprises</h3>
+                    <p>De la start-up au grand groupe, intégrez nos étudiants au sein de vos équipes et partagez votre expertise métier lors de nos rendez-vous réguliers.</p>
+                    <ul class="category-list">
+                        <li>Offres de stage & alternance</li>
+                        <li>Forums de recrutement</li>
+                        <li>Masterclasses professionnelles</li>
+                        <li>Projets d'études réels</li>
+                    </ul>
+                </div>
+                <div class="category-card fade-up" style="--delay: 0.2s">
+                    <h3>Institutions académiques</h3>
+                    <p>Établissements d'enseignement supérieur nationaux ou internationaux, construisons des passerelles d'études et des projets conjoints.</p>
+                    <ul class="category-list">
+                        <li>Double-diplômes & passerelles</li>
+                        <li>Échanges internationaux</li>
+                        <li>Projets de recherche appliquée</li>
+                        <li>Séminaires de recherche</li>
+                    </ul>
+                </div>
+                <div class="category-card fade-up" style="--delay: 0.3s">
+                    <h3>Organisations publiques & privées</h3>
+                    <p>Collectivités, ministères, fondations ou associations, développons des initiatives collectives à fort impact social et économique.</p>
+                    <ul class="category-list">
+                        <li>Sponsoring d'événements</li>
+                        <li>Conférences thématiques</li>
+                        <li>Programmes d'inclusion</li>
+                        <li>Hackathons d'utilité publique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration process -->
+    <section class="collab-timeline-section section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-up">
+                <span class="tag"><span class="dot"></span> Parcours</span>
+                <h2 class="section-title">Le processus de collaboration</h2>
+                <p class="section-subtitle" style="margin:.75rem auto 0; max-width:600px;">Une approche structurée en 4 étapes pour un partenariat performant et durable.</p>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-step fade-up" style="--delay: 0.1s">
+                    <div class="timeline-node">1</div>
+                    <h3>Premier échange</h3>
+                    <p>Rencontre d'évaluation pour identifier vos objectifs, vos besoins en talents et définir le périmètre idéal.</p>
+                </div>
+                <div class="timeline-step fade-up" style="--delay: 0.2s">
+                    <div class="timeline-node">2</div>
+                    <h3>Construction du partenariat</h3>
+                    <p>Co-conception d'un programme d'action personnalisé (modalités, calendrier, ressources et objectifs chiffrés).</p>
+                </div>
+                <div class="timeline-step fade-up" style="--delay: 0.3s">
+                    <div class="timeline-node">3</div>
+                    <h3>Mise en œuvre</h3>
+                    <p>Lancement des initiatives : publication d'offres, programmation d'ateliers, accueil d'étudiants ou lancement de projet.</p>
+                </div>
+                <div class="timeline-step fade-up" style="--delay: 0.4s">
+                    <div class="timeline-node">4</div>
+                    <h3>Suivi et évolution</h3>
+                    <p>Bilan régulier des actions menées, mesure d'impact et ajustement annuel pour accompagner votre croissance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration opportunities -->
+    <section class="opportunities-section section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-up">
+                <span class="tag"><span class="dot"></span> Opportunités</span>
+                <h2 class="section-title">Nos opportunités de collaboration</h2>
+                <p class="section-subtitle" style="margin:.75rem auto 0; max-width:600px;">Explorez les différents leviers d'action pour vous impliquer concrètement auprès de notre communauté.</p>
+            </div>
+            <div class="opp-grid">
+                <div class="opp-card fade-up" style="--delay: 0.05s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Recrutement</h3>
+                    <p>Accédez en priorité à nos profils diplômés.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.1s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h3>Stages</h3>
+                    <p>Accueillez nos étudiants pour des missions de 2 à 6 mois.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.15s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h3>Alternance</h3>
+                    <p>Intégrez des talents à l'année en contrat d'apprentissage.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.2s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <h3>Conférences</h3>
+                    <p>Intervenez sur des sujets sectoriels et d'actualité.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.25s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    </div>
+                    <h3>Masterclass</h3>
+                    <p>Animez des ateliers techniques ou des sessions interactives.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.3s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>Mentorat</h3>
+                    <p>Accompagnez personnellement un étudiant dans son projet.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.35s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <h3>Projets étudiants</h3>
+                    <p>Soumettez un défi concret à la résolution de nos étudiants.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.4s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <h3>Recherche</h3>
+                    <p>Co-développez des innovations via des thèses ou de la recherche.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.45s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                    </div>
+                    <h3>Hackathons</h3>
+                    <p>Proposez et sponsorisez un marathon d'innovation de 48h.</p>
+                </div>
+                <div class="opp-card fade-up" style="--delay: 0.5s">
+                    <div class="opp-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Sponsoring</h3>
+                    <p>Soutenez nos événements d'excellence ou bourses d'études.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-banner-grid">
+                <div class="stat-item fade-up">
+                    <span class="stat-number stat-number-anim" data-target="50" data-suffix="+">0+</span>
+                    <span class="stat-label">Partenaires actifs</span>
+                </div>
+                <div class="stat-item fade-up" style="--delay:.1s">
+                    <span class="stat-number stat-number-anim" data-target="95" data-suffix="%">0%</span>
+                    <span class="stat-label">Insertion professionnelle</span>
+                </div>
+                <div class="stat-item fade-up" style="--delay:.2s">
+                    <span class="stat-number stat-number-anim" data-target="300" data-suffix="+">0+</span>
+                    <span class="stat-label">Offres de stages & alternances / an</span>
+                </div>
+                <div class="stat-item fade-up" style="--delay:.3s">
+                    <span class="stat-number stat-number-anim" data-target="15" data-suffix="+">0+</span>
+                    <span class="stat-label">Projets étudiants réalisés</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners section -->
+    <section class="logo-carousel-container">
+        <div class="section-header text-center mb-5 fade-up">
+            <span class="tag"><span class="dot"></span> Réseau</span>
+            <h2 class="section-title">Ils nous font confiance</h2>
+        </div>
+        <div class="logo-carousel-track">
+            <!-- Logo 1: Google -->
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114A5.79 5.79 0 0 1 8.2 12.725a5.79 5.79 0 0 1 5.79-5.79c2.518 0 4.114 1.547 4.114 1.547l3.056-3.056C21.16 5.42 17.844 3 13.99 3 8.358 3 3.99 7.368 3.99 13s4.368 10 10 10c6.046 0 9.873-4.258 9.873-10 0-.682-.068-1.285-.236-1.715h-11.39Z"/></svg>
+            </div>
+            <!-- Logo 2: Microsoft -->
+            <div class="logo-item">
+                <svg viewBox="0 0 23 23" width="36" height="36"><path d="M0 0h11v11H0z" fill="#F25022"/><path d="M12 0h11v11H12z" fill="#7FBA00"/><path d="M0 12h11v11H0z" fill="#00A4EF"/><path d="M12 12h11v11H12z" fill="#FFB900"/></svg>
+            </div>
+            <!-- Logo 3: Orange -->
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><rect width="24" height="24" fill="#FF7900"/><path d="M3 17h18v4H3z" fill="#FFF"/></svg>
+            </div>
+            <!-- Logo 4: Capgemini -->
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93Zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.66 0 3 1.34 3 3v1.41c1.39.7 2.3 2.11 2.3 3.7 0 .93-.33 1.79-.9 2.48Z"/></svg>
+            </div>
+            <!-- Logo 5: Société Générale -->
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><rect width="24" height="11" fill="#FF0000"/><rect y="13" width="24" height="11" fill="#000000"/><rect y="11" width="24" height="2" fill="#FFFFFF"/></svg>
+            </div>
+            <!-- Logo 6: Decathlon -->
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M2 4h6a8 8 0 0 1 8 8 8 8 0 0 1-8 8H2V4Zm6 12a4 4 0 0 0 4-4 4 4 0 0 0-4-4H6v8h2Z"/></svg>
+            </div>
+            <!-- Logo 7: L'Oréal -->
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10c1.82 0 3.53-.5 5-1.35l-2.43-2.43A6.62 6.62 0 0 1 12 16.63c-2.56 0-4.63-2.07-4.63-4.63S9.44 7.37 12 7.37s4.63 2.07 4.63 4.63c0 .87-.24 1.68-.66 2.37l2.43 2.43A9.93 9.93 0 0 0 22 12c0-5.5-4.47-10-10-10Z"/></svg>
+            </div>
+            
+            <!-- Duplicated for Infinite Loop -->
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114A5.79 5.79 0 0 1 8.2 12.725a5.79 5.79 0 0 1 5.79-5.79c2.518 0 4.114 1.547 4.114 1.547l3.056-3.056C21.16 5.42 17.844 3 13.99 3 8.358 3 3.99 7.368 3.99 13s4.368 10 10 10c6.046 0 9.873-4.258 9.873-10 0-.682-.068-1.285-.236-1.715h-11.39Z"/></svg>
+            </div>
+            <div class="logo-item">
+                <svg viewBox="0 0 23 23" width="36" height="36"><path d="M0 0h11v11H0z" fill="#F25022"/><path d="M12 0h11v11H12z" fill="#7FBA00"/><path d="M0 12h11v11H0z" fill="#00A4EF"/><path d="M12 12h11v11H12z" fill="#FFB900"/></svg>
+            </div>
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><rect width="24" height="24" fill="#FF7900"/><path d="M3 17h18v4H3z" fill="#FFF"/></svg>
+            </div>
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93Zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.66 0 3 1.34 3 3v1.41c1.39.7 2.3 2.11 2.3 3.7 0 .93-.33 1.79-.9 2.48Z"/></svg>
+            </div>
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><rect width="24" height="11" fill="#FF0000"/><rect y="13" width="24" height="11" fill="#000000"/><rect y="11" width="24" height="2" fill="#FFFFFF"/></svg>
+            </div>
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M2 4h6a8 8 0 0 1 8 8 8 8 0 0 1-8 8H2V4Zm6 12a4 4 0 0 0 4-4 4 4 0 0 0-4-4H6v8h2Z"/></svg>
+            </div>
+            <div class="logo-item">
+                <svg viewBox="0 0 24 24" width="36" height="36"><path d="M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10c1.82 0 3.53-.5 5-1.35l-2.43-2.43A6.62 6.62 0 0 1 12 16.63c-2.56 0-4.63-2.07-4.63-4.63S9.44 7.37 12 7.37s4.63 2.07 4.63 4.63c0 .87-.24 1.68-.66 2.37l2.43 2.43A9.93 9.93 0 0 0 22 12c0-5.5-4.47-10-10-10Z"/></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding" style="width:100%; background:var(--clr-bg-main);">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-up">
+                <span class="tag"><span class="dot"></span> FAQ</span>
+                <h2 class="section-title">Questions fréquentes sur les partenariats</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">Comment devenir partenaire de Campus Superia ?<span class="faq-icon"></span></button>
+                    <div class="faq-answer"><div class="faq-answer-content">Pour toute demande d’information, nous vous invitons à remplir le formulaire ci-dessous ou à nous contacter directement par e-mail. Un conseiller en orientation ou un chargé des relations entreprises prendra ensuite contact avec vous afin d’organiser un premier échange personnalisé.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Quels sont les coûts associés à un partenariat ?<span class="faq-icon"></span></button>
+                    <div class="faq-answer"><div class="faq-answer-content">La signature d’un accord-cadre de partenariat est gratuite. Toutefois, certains projets spécifiques, tels que des hackathons personnalisés, des actions de recherche dédiées ou des opérations de sponsoring, peuvent faire l’objet d’un financement spécifique.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Puis-je proposer des offres d'alternance ou de stage ?<span class="faq-icon"></span></button>
+                    <div class="faq-answer"><div class="faq-answer-content">Absolument. Nos étudiants préparant un BTS, un Bachelor ou un MSc recherchent régulièrement des stages ainsi que des contrats d’alternance. Nous mettons à votre disposition notre plateforme interne afin de diffuser vos offres auprès de nos candidats.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Comment se déroule le suivi des projets étudiants ?<span class="faq-icon"></span></button>
+                    <div class="faq-answer"><div class="faq-answer-content">Chaque projet étudiant, qu’il s’agisse d’un projet de groupe ou d’un hackathon, est encadré par un enseignant-tuteur de Campus Supéria ainsi que par un référent au sein de votre organisation, afin de garantir la qualité des livrables.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="form-section card-variant">
+        <div class="form-section-header fade-up">
+            <div class="header-left"><h2>Collaborons<br>ensemble</h2></div>
+            <div class="header-right">
+                <p>Déposez votre demande de partenariat. Notre équipe vous recontactera sous 72 heures.</p>
+                <div class="header-actions">
+                    <a href="#contact" class="btn btn-brand-orange">Devenir partenaire ↗</a>
+                    <a href="tel:+33781547503" class="btn btn-outline-light">+33 781 547 503</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-container fade-up">
+            <div class="form-card">
+                <div class="form-card-left"><h3>Votre demande en 3 étapes</h3><p>Simple, rapide et sans engagement. Votre conseiller dédié prendra le relais sous 72h.</p><div class="card-features"><span class="feature-tag">Gratuit</span><span class="feature-tag">Rapide</span><span class="feature-tag">Dédié</span></div></div>
+                <div class="form-card-right">
+                    <form action="#" class="campus-form-card" id="multi-step-form">
+                        <div class="form-progress"><span class="progress-text">Étape <span id="current-step">1</span> sur 3</span><div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-fill"></div></div></div>
+                        <div class="form-step form-step-active" data-step="1">
+                            <div class="form-group">
+                                <label for="structure">Nom de l’entreprise / association / établissement <span class="text-brand-orange">*</span></label>
+                                <input type="text" id="structure" name="structure" placeholder="Ex: Entreprise SAS..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_nom">Nom, prénom et fonction du contact référent <span class="text-brand-orange">*</span></label>
+                                <input type="text" id="contact_nom" name="contact_nom" placeholder="Ex: Dupont Jean, Responsable RH" required>
+                            </div>
+                            <div class="form-actions form-actions-right">
+                                <button type="button" class="btn btn-brand-orange-full btn-next">Suivant</button>
+                            </div>
+                        </div>
+                        <div class="form-step" data-step="2">
+                            <div class="form-group">
+                                <label for="email">Email <span class="text-brand-orange">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="contact@entreprise.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone <span class="text-brand-orange">*</span></label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="+33 6 XX XX XX XX" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Type de partenariat souhaité <span class="text-brand-orange">*</span></label>
+                                <div class="checkbox-grid" style="display: grid; grid-template-columns: 1fr; gap: 0.75rem; margin-top: 0.5rem;">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="type_partenariat" value="Formation">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">Formation</span>
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="type_partenariat" value="Examen / certifications">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">Examen / certifications</span>
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="type_partenariat" value="Alternance">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">Alternance</span>
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="type_partenariat" value="Orientation de publics">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">Orientation de publics</span>
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="type_partenariat" value="Événement / intervention">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">Événement / intervention</span>
+                                    </label>
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" name="type_partenariat" value="Autre">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">Autre</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline-dark btn-prev">Précédent</button>
+                                <button type="button" class="btn btn-brand-orange-full btn-next">Suivant</button>
+                            </div>
+                        </div>
+                        <div class="form-step" data-step="3">
+                            <div class="form-group">
+                                <label for="demande">Votre demande (Décrivez brièvement l’objet du partenariat souhaité) <span class="text-brand-orange">*</span></label>
+                                <textarea id="demande" name="demande" placeholder="Décrivez votre projet de partenariat..." rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="disponibilites">Disponibilités pour un échange <span class="text-brand-orange">*</span></label>
+                                <input type="text" id="disponibilites" name="disponibilites" placeholder="Ex: Lundi après-midi, Mardi matin..." required>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="rgpd" name="rgpd" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">J'accepte la collecte de mes données par Campus Superia. <a href="#">[Politique de confidentialité]</a> <span class="text-brand-orange">*</span></span>
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline-dark btn-prev">Précédent</button>
+                                <button type="submit" class="btn btn-brand-orange-full">Envoyer ma demande</button>
+                            </div>
+                        </div>
+                    </form>                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <h3 class="footer-brand">Campus Superia</h3>
+                <div class="footer-bottom-brand">
+                    <img src="./assets/logo-icon.png" alt="Campus Superia Logo" class="footer-badge-img"
+                        style="height: 30px; width: auto;">
+                    <p class="copyright">&copy; 2026, Campus Superia</p>
+                </div>
+            </div>
+
+            <!-- Col 2: Menu -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#academics">Mission</a></li>
+                    <li><a href="programmes.html">Programme</a></li>
+                    <li><a href="index.html#contact">Contactez-nous</a></li>
+                    <li><a href="reclamations.html">Réclamations & Suggestions</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Informations administratives -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Documentation</h4>
+                <ul class="footer-links">
+                    <li><a href="./assets/Livret_Accueil_Campus_Superia_v2026_1.pdf" target="_blank">Livret d’accueil</a></li>
+                    <li><a href="./assets/Reglement_interieur_Campus_Superia_v2026.pdf" target="_blank">Règlement intérieur</a></li>
+                    <li><a href="accessibilite-handicap.html">Accessibilité & Handicap</a></li>
+                    <li><a href="accessibilite-handicap.html#contact-referent">Référent Handicap</a></li>
+                    <li><a href="./assets/CGV_Campus_Superia.pdf" target="_blank">CGV</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Socials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Suivez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/campus_superia" target="_blank"
+                            rel="noopener noreferrer">Instagram ↗</a></li>
+                    <li><a href="https://www.tiktok.com/@campussuperia?_r=1&_t=ZN-96ISLCCJ6s2" target="_blank"
+                            rel="noopener noreferrer">TikTok ↗</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Contactez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@campussuperia.com">contact@campussuperia.com</a></li>
+                    <li><a href="mailto:campussuperia@gmail.com">campussuperia@gmail.com</a></li>
+                    <li><a href="tel:+33781547503">+33 781 547 503</a></li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-brand-orange-full footer-btn">Inscrivez-vous</a>
+            </div>
+        </div>
+    </footer>
+<script src="script.js?v=10"></script>
+<script>document.querySelectorAll('.site-nav a').forEach(l=>l.addEventListener('click',()=>{const n=document.querySelector('.site-nav');if(n)n.classList.remove('active');}))</script>
+</body>
+</html>

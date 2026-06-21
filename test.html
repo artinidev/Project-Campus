@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Campus Superia - Test de Positionnement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300..700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="test.css?v=5">
+</head>
+
+<body>
+
+    <!-- Site Header (Navbar) -->
+    <header class="site-header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./assets/logo-full.png" alt="Campus Superia Logo">
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu"
+                onclick="document.querySelector('.site-nav').classList.toggle('active')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="site-nav">
+                <a href="#about">À propos</a>
+                <a href="#academics">Mission</a>
+                <a href="programmes.html">Programme</a>
+                <div class="nav-dropdown-wrapper">
+                    <a href="test.html" class="dropdown-trigger">
+                        <span>Pré-évaluation</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-links-col">
+                            <div class="dropdown-item opt-analyse">
+                                <a href="analyse.html">
+                                    <span class="item-title">Analyse personnalisée de votre projet</span>
+                                    <span class="item-desc">Afin de vous accompagner dans le choix de votre formation,
+                                        complétez ce court questionnaire pour orienter notre équipe.</span>
+                                </a>
+                            </div>
+                            <div class="dropdown-item opt-test">
+                                <a href="test.html">
+                                    <span class="item-title">Pré-évaluation</span>
+                                    <span class="item-desc">CAMPUS SUPERIA vous propose un test de positionnement en
+                                        français afin d’évaluer votre niveau actuel, d’identifier vos besoins et de vous
+                                        orienter.</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-preview-col">
+                            <div class="preview-img-container">
+                                <img src="./assets/hero.jpeg" class="preview-img img-default" alt="Campus Default">
+                                <img src="./assets/scroll-actual-2.jpg" class="preview-img img-analyse"
+                                    alt="Project Analysis">
+                                <img src="./assets/scroll-actual-1.jpg" class="preview-img img-test"
+                                    alt="French Placement Test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Admissions Mega-Menu -->
+                <div class="nav-dropdown-wrapper">
+                    <a href="admissions.html" class="dropdown-trigger">
+                        <span>Admissions</span>
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="nav-dropdown admissions-mega">
+                        <!-- Col 1: Main Category Cards -->
+                        <div class="adm-column adm-col-main">
+                            <div class="dropdown-col-header">Intégrer Campus Supéria</div>
+                            <div class="adm-cards-container">
+                                <div class="adm-card-btn active" data-target="candidature">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Déposer ma
+                                            candidature</span></div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="adm-card-btn" data-target="financement">
+                                    <div class="adm-card-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="adm-card-text"><span class="adm-card-title">Financer ma formation</span>
+                                    </div>
+                                    <div class="adm-card-arrow">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 2: Sub-category Cards -->
+                        <div class="adm-column adm-col-sub">
+                            <!-- Sub-panel for Candidature -->
+                            <div class="adm-sub-panel active" id="sub-panel-candidature">
+                                <div class="dropdown-col-header">Choisir sa rentrée</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn active" data-target="rentree-septembre">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Rentrée de
+                                                septembre</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="rentree-fevrier">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Rentrée de
+                                                février</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="adm-card-btn" data-target="procedure-internationale">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                <path
+                                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Candidats
+                                                internationaux</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sub-panel for Financement -->
+                            <div class="adm-sub-panel" id="sub-panel-financement">
+                                <div class="dropdown-col-header">Le financement des études</div>
+                                <div class="adm-cards-container">
+                                    <div class="adm-card-btn" data-target="financement-options">
+                                        <div class="adm-card-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <line x1="12" y1="10" x2="12" y2="10"></line>
+                                                <line x1="12" y1="14" x2="12" y2="14"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="adm-card-text"><span class="adm-card-title">Options de
+                                                financement</span></div>
+                                        <div class="adm-card-arrow">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 3: Direct Link Lists -->
+                        <div class="adm-column adm-col-links">
+                            <div class="adm-links-panel active" id="links-panel-rentree-septembre">
+                                <div class="dropdown-col-header">Procédures par programme</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bts.html">Admission BTS</a></li>
+                                    <li><a href="admissions-bachelor.html">Admission Bachelor</a></li>
+                                    <li><a href="admissions-bba.html">Admission BBA</a></li>
+                                    <li><a href="admissions-msc.html">Admission MSc</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-rentree-fevrier">
+                                <div class="dropdown-col-header">Faire sa rentrée en Février</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-bachelor.html?rentree=fevrier">Admission Bachelor</a></li>
+                                    <li><a href="admissions-bba.html?rentree=fevrier">Admission BBA</a></li>
+                                    <li><a href="admissions-msc.html?rentree=fevrier">Admission MSc</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-procedure-internationale">
+                                <div class="dropdown-col-header">Procédure Internationale</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-international.html">Admission Internationale Bachelor</a>
+                                    </li>
+                                    <li><a href="admissions-international.html">Admission Internationale BBA</a></li>
+                                    <li><a href="admissions-international.html">Admission Internationale MSc</a></li>
+                                    <li><a href="admissions-international.html#visa">Visa Étudiant</a></li>
+                                    <li><a href="admissions-international.html#visa">Logement Étudiant</a></li>
+                                </ul>
+                            </div>
+                            <div class="adm-links-panel" id="links-panel-financement-options">
+                                <div class="dropdown-col-header">Le financement des études</div>
+                                <ul class="adm-detail-links">
+                                    <li><a href="admissions-frais.html">Frais de scolarité</a></li>
+                                    <li><a href="admissions-bourses.html">Bourses</a></li>
+                                    <li><a href="admissions-bourses.html#cpf">Financement</a></li>
+                                    <li><a href="admissions-frais.html#options">Paiement échelonné</a></li>
+                                    <li><a href="admissions-bourses.html#alternance">Alternance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Col 4: Preview Card -->
+                        <div class="adm-column adm-col-preview">
+                            <div class="adm-preview-container">
+                                <div class="adm-preview-card active" data-preview="rentree-septembre">
+                                    <img src="./assets/adm-preview-september.png" alt="Rentrée de Septembre">
+                                </div>
+                                <div class="adm-preview-card" data-preview="rentree-fevrier">
+                                    <img src="./assets/adm-preview-september.png" alt="Rentrée de Février">
+                                </div>
+                                <div class="adm-preview-card" data-preview="procedure-internationale">
+                                    <img src="./assets/adm-preview-international.png" alt="Procédure Internationale">
+                                </div>
+                                <div class="adm-preview-card" data-preview="financement-options">
+                                    <img src="./assets/adm-preview-scholarship.png" alt="Le financement des études">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="partenariats.html">Partenariats</a>
+                <a href="index-en.html" class="nav-lang" aria-label="Switch language to English">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    <span>EN</span>
+                </a>
+                <a href="#contact" class="nav-cta">Contactez-nous</a>
+            </nav>
+        </header>
+
+    <main id="test-app">
+        <!-- Will be populated by JS or static sections -->
+        <div id="test-intro-step" class="test-step active fade-up">
+            <!-- Hero Section -->
+            <section class="test-hero hero-section">
+                <div class="hero-image-wrapper hero-secondary fade-up">
+                    <img src="./assets/hero.jpeg" alt="Campus Superia Test" class="hero-img"
+                        onerror="this.src='https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop'">
+                    <div class="hero-overlay">
+                        <div class="hero-text-area">
+                            <span class="overline" style="color: white; margin-bottom: 0.5rem; display: block; font-weight: bold; text-transform: uppercase;">Évaluation diagnostique – repérage du niveau CECRL (A1 à C1)</span>
+                            <h1 class="display-title" style="font-size: 3.5rem;">Test de Positionnement en Français</h1>
+                            <p class="hero-subtitle">Former aujourd’hui les talents de demain. Ce test permet d’identifier votre niveau en français selon le CECRL.</p>
+                            <div class="hero-actions" style="margin-top: 2.5rem; display: flex; gap: 1rem;">
+                                <button type="button" id="start-btn" class="btn btn-brand-orange">Commencer le test</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Objective & Instructions Container -->
+            <section class="test-intro-container container">
+                <!-- Objectives -->
+                <div class="test-card">
+                    <h2 class="test-card-title">Objectif du test</h2>
+                    <p class="test-card-text">Ce test permet d’identifier le niveau du candidat en français selon le Cadre européen commun de référence pour les langues (CECRL), de A1 à C1. Il évalue la compréhension, le lexique, la grammaire et la production écrite afin d’orienter le candidat vers le parcours le plus adapté.</p>
+                    <div class="test-icon-grid">
+                        <div class="test-icon-item">
+                            <div class="icon-square">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            </div>
+                            <span>Compréhension écrite</span>
+                        </div>
+                        <div class="test-icon-item">
+                            <div class="icon-square">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                            </div>
+                            <span>Grammaire</span>
+                        </div>
+                        <div class="test-icon-item">
+                            <div class="icon-square">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                            </div>
+                            <span>Production écrite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consignes -->
+                <div class="test-card">
+                    <h2 class="test-card-title">Consignes</h2>
+                    <ul class="test-list">
+                        <li>Répondre à toutes les questions</li>
+                        <li>Écrire lisiblement (pour les parties rédigées)</li>
+                        <li>Aucun dictionnaire autorisé</li>
+                        <li>Durée indicative : 45 à 60 minutes</li>
+                        <li>Un entretien oral peut compléter le test</li>
+                    </ul>
+                </div>
+
+                <!-- Info Candidat -->
+                <div class="test-card test-form-card">
+                    <h2 class="test-card-title">Informations Candidat</h2>
+                    <p class="test-card-text" style="margin-bottom: 2rem;">Veuillez remplir vos informations avant de commencer.</p>
+                    <form id="candidat-form" class="test-form">
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <input type="text" id="nom" name="nom" required placeholder=" ">
+                                <label for="nom">Nom</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="prenom" name="prenom" required placeholder=" ">
+                                <label for="prenom">Prénom</label>
+                            </div>
+                            <div class="input-group">
+                                <select id="nationalite" name="nationalite" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Algérie">Algérie</option>
+                                    <option value="Allemagne">Allemagne</option>
+                                    <option value="Belgique">Belgique</option>
+                                    <option value="Bénin">Bénin</option>
+                                    <option value="Cameroun">Cameroun</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Congo">Congo</option>
+                                    <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                                    <option value="Espagne">Espagne</option>
+                                    <option value="États-Unis">États-Unis</option>
+                                    <option value="France">France</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Guinée">Guinée</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Maroc">Maroc</option>
+                                    <option value="Mauritanie">Mauritanie</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Royaume-Uni">Royaume-Uni</option>
+                                    <option value="Sénégal">Sénégal</option>
+                                    <option value="Suisse">Suisse</option>
+                                    <option value="Tchad">Tchad</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Tunisie">Tunisie</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                                <label for="nationalite">Nationalité</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="langue" name="langue" required placeholder=" ">
+                                <label for="langue">Langue maternelle</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="formation" name="formation" required placeholder=" ">
+                                <label for="formation">Formation / Objectif</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" id="telephone" name="telephone" required placeholder=" ">
+                                <label for="telephone">Téléphone</label>
+                            </div>
+                            <div class="input-group full-width">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-brand-orange-full test-submit-btn" style="margin-top: 2rem; width: 100%;">Valider et continuer</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- The actual Test wrapper (hidden initially) -->
+        <div id="test-active-step" class="test-step" style="display: none;">
+            <!-- Sticky Header -->
+            <div class="test-sticky-header">
+                <div class="test-progress-container container">
+                    <div class="progress-info">
+                        <span id="current-section-name">1. Compréhension écrite et lexique</span>
+                        <span id="progress-percentage">0%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="main-progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Sections Container -->
+            <div class="test-quiz-container container" id="quiz-sections-wrapper">
+                
+                <!-- Section 1 -->
+                <section class="quiz-section active" id="quiz-section-1">
+                    <div class="section-header">
+                        <h2>Partie 1 — Compréhension écrite et lexique (20 pts)</h2>
+                        <p>Lisez attentivement les documents et répondez aux questions.</p>
+                    </div>
+
+                    <div class="document-block">
+                        <div class="document-ui email-ui">
+                            <div class="email-header">
+                                <strong>De :</strong> Le service admissions<br>
+                                <strong>Objet :</strong> Confirmation de rendez-vous
+                            </div>
+                            <div class="email-body">
+                                <p>Bonjour Madame,</p>
+                                <p>Nous vous confirmons votre rendez-vous d'inscription prévu le jeudi 16 mai à 14 h 30 au centre Campus Superia. Merci de vous présenter 10 minutes avant l'horaire indiqué, muni(e) d'une pièce d'identité et de vos derniers diplômes. Si vous ne pouvez pas être présent(e), merci de nous prévenir au moins 24 heures à l'avance.</p>
+                                <p>Cordialement,<br>Le service admissions</p>
+                            </div>
+                        </div>
+                        <div class="question-list">
+                            <div class="q-item">
+                                <label>1. Quel est l'objet principal de ce message ?</label>
+                                <input type="text" class="q-input" name="q1" placeholder="Votre réponse...">
+                            </div>
+                            <div class="q-item">
+                                <label>2. À quelle date et à quelle heure le rendez-vous est-il fixé ?</label>
+                                <input type="text" class="q-input" name="q2" placeholder="Votre réponse...">
+                            </div>
+                            <div class="q-item">
+                                <label>3. Quels documents le candidat doit-il apporter ?</label>
+                                <input type="text" class="q-input" name="q3" placeholder="Votre réponse...">
+                            </div>
+                            <div class="q-item">
+                                <label>4. Que doit faire le candidat s'il ne peut pas venir ?</label>
+                                <input type="text" class="q-input" name="q4" placeholder="Votre réponse...">
+                            </div>
+                            <div class="q-item">
+                                <label>5. Qui a envoyé ce message ?</label>
+                                <input type="text" class="q-input" name="q5" placeholder="Votre réponse...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="document-block">
+                        <div class="document-ui notice-ui">
+                            <h3>Avis aux apprenants</h3>
+                            <p>À partir du lundi 3 juin, l'accueil du centre ouvrira à 8 h 30. Les apprenants devront signer la feuille de présence dès leur arrivée. En cas de retard supérieur à 15 minutes, l'accès au cours pourra être refusé. Pour toute absence, un justificatif devra être transmis dans un délai de 48 heures.</p>
+                        </div>
+                        <div class="question-list">
+                            <div class="q-item">
+                                <label>6. À partir de quand les nouveaux horaires sont-ils appliqués ?</label>
+                                <input type="text" class="q-input" name="q6" placeholder="Votre réponse...">
+                            </div>
+                            <div class="q-item">
+                                <label>7. Que doivent faire les apprenants en arrivant ?</label>
+                                <input type="text" class="q-input" name="q7" placeholder="Votre réponse...">
+                            </div>
+                            <div class="q-item">
+                                <label>8. Que peut-il se passer en cas de retard de plus de 15 minutes ?</label>
+                                <input type="text" class="q-input" name="q8" placeholder="Votre réponse...">
+                            </div>
+                            <div class="q-item">
+                                <label>9. Dans quel délai faut-il transmettre un justificatif d'absence ?</label>
+                                <input type="text" class="q-input" name="q9" placeholder="Votre réponse...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-actions">
+                        <button type="button" class="btn btn-brand-orange-full next-section-btn">Continuer vers Partie 2</button>
+                    </div>
+                </section>
+
+                <!-- Section 2 -->
+                <section class="quiz-section" id="quiz-section-2" style="display: none;">
+                    <div class="section-header">
+                        <h2>Partie 2 — Grammaire et structures (20 pts)</h2>
+                        <p>Sélectionnez la bonne réponse ou complétez la phrase.</p>
+                    </div>
+
+                    <div class="mcq-list" id="mcq-container">
+                        <!-- Filled by JS -->
+                    </div>
+
+                    <div class="section-actions">
+                        <button type="button" class="btn btn-outline-brand prev-section-btn">Retour</button>
+                        <button type="button" class="btn btn-brand-orange-full next-section-btn">Continuer vers Partie 3</button>
+                    </div>
+                </section>
+
+                <!-- Section 3 -->
+                <section class="quiz-section" id="quiz-section-3" style="display: none;">
+                    <div class="section-header">
+                        <h2>Partie 3 — Production écrite (20 pts)</h2>
+                        <p>Rédigez votre texte dans l'éditeur ci-dessous.</p>
+                    </div>
+
+                    <div class="writing-interface">
+                        <div class="writing-instruction">
+                            <strong>Consigne :</strong> Rédigez un e-mail professionnel de 8 à 12 lignes. Vous souhaitez obtenir des informations sur une formation de français professionnel proposée par Campus Superia. Présentez brièvement votre situation, indiquez votre objectif et posez deux questions sur les dates, le tarif, les modalités ou le niveau requis.
+                        </div>
+                        <div class="editor-wrapper">
+                            <textarea id="writing-editor" class="writing-textarea" placeholder="Commencez à écrire ici..."></textarea>
+                            <div class="editor-statusbar">
+                                <span class="auto-save-status">Enregistré à l'instant</span>
+                                <span class="word-counter"><span id="word-count">0</span> mots | <span id="line-count">0</span> lignes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-actions">
+                        <button type="button" class="btn btn-outline-brand prev-section-btn">Retour</button>
+                        <button type="button" class="btn btn-brand-orange-full submit-test-btn" id="submit-test-btn">Soumettre le test</button>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Result Step -->
+        <div id="test-result-step" class="test-step" style="display: none;">
+            <div class="container test-result-container">
+                <div class="result-dashboard">
+                    <div class="result-header">
+                        <div class="success-icon">✅</div>
+                        <h2>Test terminé avec succès !</h2>
+                        <p>Merci d'avoir passé le test de positionnement Campus Superia.</p>
+                    </div>
+
+                    <div class="score-breakdown">
+                        <h3>Résumé de votre évaluation</h3>
+                        <ul class="score-list">
+                            <li><span>Compréhension écrite et lexique</span> <span class="score" id="score-part1">-- / 20</span></li>
+                            <li><span>Grammaire et structures</span> <span class="score" id="score-part2">-- / 20</span></li>
+                            <li><span>Production écrite</span> <span class="score" id="score-part3">-- / 20</span></li>
+                            <li class="total-row"><span>TOTAL</span> <span class="score" id="score-total">-- / 60</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="cefr-levels">
+                        <div class="level-badge" id="badge-a1">A1</div>
+                        <div class="level-badge" id="badge-a2">A2</div>
+                        <div class="level-badge" id="badge-b1">B1</div>
+                        <div class="level-badge" id="badge-b2">B2</div>
+                        <div class="level-badge" id="badge-c1">C1</div>
+                    </div>
+
+                    <div class="preconisation">
+                        <h3>Préconisation Campus Superia</h3>
+                        <div class="reco-cards" id="reco-container">
+                            <div class="reco-card recommended">
+                                <h4>Parcours intermédiaire</h4>
+                                <p>Recommandé pour consolider vos bases et viser l'autonomie.</p>
+                            </div>
+                            <div class="reco-card">
+                                <h4>Préparation DFP B1</h4>
+                                <p>Idéal pour valoriser vos compétences professionnelles.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-actions" style="margin-top: 2rem; text-align: center;">
+                        <a href="index.html" class="btn btn-brand-orange">Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+<!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <h3 class="footer-brand">Campus Superia</h3>
+                <div class="footer-bottom-brand">
+                    <img src="./assets/logo-icon.png" alt="Campus Superia Logo" class="footer-badge-img"
+                        style="height: 30px; width: auto;">
+                    <p class="copyright">&copy; 2026, Campus Superia</p>
+                </div>
+            </div>
+
+            <!-- Col 2: Menu -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Menu</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="index.html#academics">Mission</a></li>
+                    <li><a href="programmes.html">Programme</a></li>
+                    <li><a href="index.html#contact">Contactez-nous</a></li>
+                    <li><a href="reclamations.html">Réclamations & Suggestions</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Informations administratives -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Documentation</h4>
+                <ul class="footer-links">
+                    <li><a href="./assets/Livret_Accueil_Campus_Superia_v2026_1.pdf" target="_blank">Livret d’accueil</a></li>
+                    <li><a href="./assets/Reglement_interieur_Campus_Superia_v2026.pdf" target="_blank">Règlement intérieur</a></li>
+                    <li><a href="accessibilite-handicap.html">Accessibilité & Handicap</a></li>
+                    <li><a href="accessibilite-handicap.html#contact-referent">Référent Handicap</a></li>
+                    <li><a href="./assets/CGV_Campus_Superia.pdf" target="_blank">CGV</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Socials -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Suivez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/campus_superia" target="_blank"
+                            rel="noopener noreferrer">Instagram ↗</a></li>
+                    <li><a href="https://www.tiktok.com/@campussuperia?_r=1&_t=ZN-96ISLCCJ6s2" target="_blank"
+                            rel="noopener noreferrer">TikTok ↗</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Contactez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@campussuperia.com">contact@campussuperia.com</a></li>
+                    <li><a href="mailto:campussuperia@gmail.com">campussuperia@gmail.com</a></li>
+                    <li><a href="tel:+33781547503">+33 781 547 503</a></li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-brand-orange-full footer-btn">Inscrivez-vous</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add scripts -->
+    <script src="script.js?v=2"></script>
+    <script src="test.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+        <section class="story-section section-padding" id="parcours">
+            <div class="container">
+                <div class="section-header text-center mb-5 fade-up">
+                    <span class="tag"><span class="dot"></span> Parcours</span>
+                    <h2 class="section-title">Votre parcours de formation</h2>
+                    <p class="section-subtitle">Un accompagnement structuré, personnalisé et conçu pour garantir votre réussite.</p>
+                </div>
+                
+                <div class="story-timeline">
+                    <!-- Background Line and progressive Fill Line -->
+                    <div class="timeline-line-bg"></div>
+                    <div class="timeline-line-fill" id="timeline-fill"></div>
+
+                    <!-- Step 1 (Left) -->
+                    <div class="story-step left">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Positionnement initial</h3>
+                            <p>Analyse de votre niveau, de vos besoins et de vos objectifs.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 (Right) -->
+                    <div class="story-step right">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Intégration au programme</h3>
+                            <p>Mise en place du parcours et accès aux outils pédagogiques.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 (Left) -->
+                    <div class="story-step left">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Formation & accompagnement</h3>
+                            <p>Cours, suivi pédagogique et exercices pratiques.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 (Right) -->
+                    <div class="story-step right">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Suivi de progression</h3>
+                            <p>Bilans intermédiaires et ajustements personnalisés.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 (Left) -->
+                    <div class="story-step left">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Validation finale</h3>
+                            <p>Évaluation des acquis et accompagnement vers la suite.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
